@@ -15,9 +15,9 @@
             <TableColumn prefWidth="75.0" text="C2" />
          </columns>
       </TableView>
-      <Button fx:id="btnBuscarVid" layoutX="80.0" layoutY="508.0" mnemonicParsing="false" onAction="#click" text="Buscar Video" />
-      <Button fx:id="btnJoin" layoutX="266.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" text="Join Party" />
-      <Button fx:id="btnHost" layoutX="468.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" text="Start Host" />
+      <Button fx:id="btnBuscarVid" layoutX="54.0" layoutY="508.0" mnemonicParsing="false" onAction="#click" text="Reproducir Video" />
+      <Button fx:id="btnJoin" layoutX="262.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" text="Join Party" />
+      <Button fx:id="btnHost" layoutX="467.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" text="Start Host" />
       <TableView fx:id="tblVistosRecientes" layoutX="106.0" layoutY="104.0" prefHeight="133.0" prefWidth="389.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />

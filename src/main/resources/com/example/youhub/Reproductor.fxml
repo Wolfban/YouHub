@@ -10,10 +10,10 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="scr" prefHeight="338.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Reproductor">
     <children>
-        <VBox fx:id="vbox" alignment="CENTER" prefHeight="338.0" prefWidth="491.0">
+      <Button fx:id="btnElegirVid" mnemonicParsing="false" onAction="#Click" text="Elige el Video" />
+        <VBox fx:id="vbox" alignment="CENTER" prefHeight="338.0" prefWidth="641.0">
             <children>
                 <MediaView fx:id="Vid" fitHeight="200.0" fitWidth="200.0" />
                 <Slider fx:id="VidDuracion">

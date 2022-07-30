@@ -2,13 +2,18 @@ package com.example.youhub;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * @author Esteban Barrera
@@ -41,22 +46,24 @@ public class BusquedadeVideo {
     }
 
     @FXML
-    void click(ActionEvent event) {
-    buscarVideo();
+    void click(ActionEvent event) throws IOException {
+
     }
     private String lgar;
-    public void buscarVideo(){
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Buscar Video");
-        File File = fileChooser.showOpenDialog(null);
-        lgar = File.toURI().toString();
-        if(lgar != null){
-            Media vid = new Media(lgar);
-            Reproductor.Video = new MediaPlayer(vid);
+
+    public void closeWindows() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("BusquedadeVideo.fxml"));
+
+        Parent root = loader.load();
+        Object controlador = loader.getController();
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        stage.setScene(scene);
+        stage.show();
 
 
-            Reproductor.Video.play();
-        }
     }
 
 

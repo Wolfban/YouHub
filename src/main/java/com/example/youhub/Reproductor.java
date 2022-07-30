@@ -2,7 +2,10 @@ package com.example.youhub;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
@@ -15,8 +18,10 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -85,12 +90,36 @@ public class Reproductor implements Initializable {
 
     @FXML
     void Click(ActionEvent event) {
-    buscarVideo();
+
     }
 
     @FXML
-    void click(ActionEvent event) {
+    private Button btnElegirVid;
 
+
+    @FXML
+    void click(ActionEvent event) throws  IOException{
+        buscarVideo();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor .fxml"));
+        Parent root = loader.load();
+        BusquedadeVideo controlador = loader.getController();
+        Scene scene1 = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene1);
+        stage.show();
+
+
+        stage.setOnCloseRequest(e -> {
+            try {
+                controlador.closeWindows();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+
+        Stage myStage = (Stage) this.btnElegirVid.getScene().getWindow();
+        myStage.close();
     }
     private String lgar;
     public void buscarVideo(){
@@ -98,12 +127,36 @@ public class Reproductor implements Initializable {
         fileChooser.setTitle("Buscar Video");
         File File = fileChooser.showOpenDialog(null);
         lgar = File.toURI().toString();
+        if(lgar != null){
+            Media vid = new Media(lgar);
+            Reproductor.Video = new MediaPlayer(vid);
 
+            Reproductor.Video.play();
+        }
     }
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
+
+    public void closeWindows() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("BusquedadeVideo.fxml"));
+
+        Parent root = loader.load();
+        Object controlador = loader.getController();
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        stage.setScene(scene);
+        stage.show();
+
+
+    }
+
 }
 
 
