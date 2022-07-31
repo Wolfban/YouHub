@@ -1,6 +1,10 @@
 package com.example.youhub;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -13,6 +17,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -92,17 +97,14 @@ public class Reproductor implements Initializable {
     private ImageView Reiniciar;
 
 
-    @FXML
-    void Click(ActionEvent event) {
 
-    }
 
     @FXML
     private Button btnElegirVid;
 
 
     @FXML
-    void click(ActionEvent event) throws  IOException{
+    void Click(ActionEvent event) throws  IOException{
         buscarVideo();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor .fxml"));
         Parent root = loader.load();
@@ -216,7 +218,92 @@ public class Reproductor implements Initializable {
 
         TiempoActual();
 
+        Volumenn.valueProperty().addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(Observable observable) {
+            Video.setVolume(Volumenn.getValue());
+            if(Video.getVolume() != 0.0){
+                lblVolumen.setGraphic(imgVolumen);
+                Silenciado = false;
 
+            }else{
+                lblVolumen.setGraphic(Silenciar);
+                Silenciado = true;
+            }
+            }
+        });
+
+        Velocidad.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if (Velocidad.getText().equals("1x")){
+                    Velocidad.setText("1.5x");
+                    Video.setRate(1.5);
+
+
+                }else if (Velocidad.getText().equals("1.5x")){
+                    Velocidad.setText("2x");
+                    Video.setRate(2.0);
+                }else{
+                    Velocidad.setText("1x");
+                    Video.setRate(1.0);
+                }
+            }
+        });
+        lblVolumen.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if (Silenciado){
+                    lblVolumen.setGraphic(imgVolumen);
+                    Volumenn.setValue(0.2);
+                    Silenciado = false;
+
+                }else{
+                    lblVolumen.setGraphic(Silenciar);
+                    Volumenn.setValue(0);
+                    Silenciado = true;
+
+                }
+            }
+        });
+        lblVolumen.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(Volumen.lookup("#Volumenn")== null){
+                    Volumen.getChildren().add(Volumenn);
+                    Volumenn.setValue(Video.getVolume());
+                }
+            }
+        });
+        Volumen.setOnMouseExited(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                Volumen.getChildren().remove(Volumenn);
+
+            }
+        });
+        vbox.sceneProperty().addListener(new ChangeListener<Scene>() {
+            @Override
+            public void changed(ObservableValue<? extends Scene> observableValue, Scene scene, Scene t1) {
+            if(scene == null &&  t1 != null){
+             Vid.fitHeightProperty().bind(scene.heightProperty().subtract(Volumen.heightProperty().add(20)));
+            }
+            }
+        });
+        PantallaCompleta.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                Label label = (Label) mouseEvent.getSource();
+                Stage stage = (Stage) label.getScene().getWindow();
+                if(stage.isFullScreen()){
+                    stage.setFullScreen(false);
+                    PantallaCompleta.setGraphic(FullScreen);
+                }else{
+                    stage.setFullScreen(true);
+                    PantallaCompleta.setGraphic(Salir);
+                }
+            }
+        });
     }
 
     public void TiempoActual(){
