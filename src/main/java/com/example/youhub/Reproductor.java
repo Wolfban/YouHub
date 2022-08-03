@@ -17,6 +17,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
@@ -97,14 +99,12 @@ public class Reproductor implements Initializable {
     private ImageView Reiniciar;
 
 
-
-
     @FXML
     private Button btnElegirVid;
 
 
     @FXML
-    void Click(ActionEvent event) throws  IOException{
+    void Click(ActionEvent event) throws IOException {
         buscarVideo();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor .fxml"));
         Parent root = loader.load();
@@ -127,13 +127,15 @@ public class Reproductor implements Initializable {
         Stage myStage = (Stage) this.btnElegirVid.getScene().getWindow();
         myStage.close();
     }
+
     private String lgar;
-    public void buscarVideo(){
+
+    public void buscarVideo() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Buscar Video");
         File File = fileChooser.showOpenDialog(null);
         lgar = File.toURI().toString();
-        if(lgar != null){
+        if (lgar != null) {
             Media vid = new Media(lgar);
             Reproductor.Video = new MediaPlayer(vid);
 
@@ -144,7 +146,7 @@ public class Reproductor implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        final  int  Tamanio = 25;
+        final int Tamanio = 25;
         mediaVid = new Media(new File("src/main/resources/SG.mp4").toURI().toString());
         Video = new MediaPlayer(mediaVid);
         Vid.setMediaPlayer(Video);
@@ -194,16 +196,16 @@ public class Reproductor implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 Button Reproduir = (Button) actionEvent.getSource();
-                if(FindelVid){
+                if (FindelVid) {
                     VidDuracion.setValue(0);
                     FindelVid = false;
                     reproduciendose = false;
                 }
-                if(reproduciendose){
+                if (reproduciendose) {
                     Reproduir.setGraphic(Play);
                     Video.pause();
-                    reproduciendose= false;
-                }else{
+                    reproduciendose = false;
+                } else {
                     Reproduir.setGraphic(Parar);
                     Video.play();
                     reproduciendose = true;
@@ -221,30 +223,30 @@ public class Reproductor implements Initializable {
         Volumenn.valueProperty().addListener(new InvalidationListener() {
             @Override
             public void invalidated(Observable observable) {
-            Video.setVolume(Volumenn.getValue());
-            if(Video.getVolume() != 0.0){
-                lblVolumen.setGraphic(imgVolumen);
-                Silenciado = false;
+                Video.setVolume(Volumenn.getValue());
+                if (Video.getVolume() != 0.0) {
+                    lblVolumen.setGraphic(imgVolumen);
+                    Silenciado = false;
 
-            }else{
-                lblVolumen.setGraphic(Silenciar);
-                Silenciado = true;
-            }
+                } else {
+                    lblVolumen.setGraphic(Silenciar);
+                    Silenciado = true;
+                }
             }
         });
 
         Velocidad.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                if (Velocidad.getText().equals("1x")){
+                if (Velocidad.getText().equals("1x")) {
                     Velocidad.setText("1.5x");
                     Video.setRate(1.5);
 
 
-                }else if (Velocidad.getText().equals("1.5x")){
+                } else if (Velocidad.getText().equals("1.5x")) {
                     Velocidad.setText("2x");
                     Video.setRate(2.0);
-                }else{
+                } else {
                     Velocidad.setText("1x");
                     Video.setRate(1.0);
                 }
@@ -253,12 +255,12 @@ public class Reproductor implements Initializable {
         lblVolumen.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                if (Silenciado){
+                if (Silenciado) {
                     lblVolumen.setGraphic(imgVolumen);
                     Volumenn.setValue(0.2);
                     Silenciado = false;
 
-                }else{
+                } else {
                     lblVolumen.setGraphic(Silenciar);
                     Volumenn.setValue(0);
                     Silenciado = true;
@@ -269,7 +271,7 @@ public class Reproductor implements Initializable {
         lblVolumen.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                if(Volumen.lookup("#Volumenn")== null){
+                if (Volumen.lookup("#Volumenn") == null) {
                     Volumen.getChildren().add(Volumenn);
                     Volumenn.setValue(Video.getVolume());
                 }
@@ -285,9 +287,9 @@ public class Reproductor implements Initializable {
         vbox.sceneProperty().addListener(new ChangeListener<Scene>() {
             @Override
             public void changed(ObservableValue<? extends Scene> observableValue, Scene scene, Scene t1) {
-            if(scene == null &&  t1 != null){
-             Vid.fitHeightProperty().bind(scene.heightProperty().subtract(Volumen.heightProperty().add(20)));
-            }
+                if (scene == null && t1 != null) {
+                    Vid.fitHeightProperty().bind(t1.heightProperty().subtract(Volumen.heightProperty().add(20)));
+                }
             }
         });
         PantallaCompleta.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -295,19 +297,87 @@ public class Reproductor implements Initializable {
             public void handle(MouseEvent mouseEvent) {
                 Label label = (Label) mouseEvent.getSource();
                 Stage stage = (Stage) label.getScene().getWindow();
-                if(stage.isFullScreen()){
+                if (stage.isFullScreen()) {
                     stage.setFullScreen(false);
                     PantallaCompleta.setGraphic(FullScreen);
-                }else{
+                } else {
                     stage.setFullScreen(true);
                     PantallaCompleta.setGraphic(Salir);
                 }
+                stage.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+                    @Override
+                    public void handle(KeyEvent keyEvent) {
+                        if (keyEvent.getCode() == KeyCode.ESCAPE) {
+                            PantallaCompleta.setGraphic(FullScreen);
+                        }
+                    }
+                });
+            }
+        });
+        Video.totalDurationProperty().addListener(new ChangeListener<Duration>() {
+            @Override
+            public void changed(ObservableValue<? extends Duration> observableValue, Duration duration, Duration t1) {
+                VidDuracion.setMax(t1.toSeconds());
+                TiempoVid.setText(tenerTiempo(t1));
+            }
+        });
+        VidDuracion.valueChangingProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean t1) {
+                if (!t1) {
+                    Video.seek(Duration.seconds(VidDuracion.getValue()));
+                }
+            }
+        });
+
+        VidDuracion.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                double TiempoActual = Video.getCurrentTime().toSeconds();
+                if (Math.abs(TiempoActual - t1.doubleValue()) > 0.5) {
+                    Video.seek(Duration.seconds(t1.doubleValue()));
+                }
+                FinaldelVid(TiempoTotal.getText(), TiempoTotal.getText());
+            }
+        });
+        Video.currentTimeProperty().addListener(new ChangeListener<Duration>() {
+            @Override
+            public void changed(ObservableValue<? extends Duration> observableValue, Duration duration, Duration t1) {
+                if (!VidDuracion.isValueChanging()) {
+                    VidDuracion.setValue(duration.toSeconds());
+                }
+                FinaldelVid(TiempoVid.getText(), TiempoTotal.getText());
+
+            }
+        });
+        Video.setOnEndOfMedia(new Runnable() {
+            @Override
+            public void run() {
+            btnPlayStop.setGraphic(Reiniciar);
+            FindelVid = true;
+            if (!TiempoVid.textProperty().equals(TiempoTotal.textProperty())){
+                TiempoVid.textProperty().unbind();
+                TiempoVid.setText(tenerTiempo(Video.getTotalDuration())+ " / ");
+            }
             }
         });
     }
 
-    public void TiempoActual(){
-        lblVolumen.textProperty().bind(Bindings.createStringBinding(new Callable<String>() {
+    public String tenerTiempo(Duration Tiempo) {
+        int horas = (int) Tiempo.toHours();
+        int minutos = (int) Tiempo.toMinutes();
+        int segundos = (int) Tiempo.toSeconds();
+
+        if (segundos > 59) segundos = segundos % 60;
+        if (minutos > 59) minutos = minutos % 60;
+        if (horas > 59) horas = horas % 60;
+        if (horas > 0) return String.format("%d:%02:%02d", horas, minutos, segundos);
+        else return String.format("%02d:%02d", minutos, segundos);
+
+    }
+
+    public void TiempoActual() {
+        TiempoTotal.textProperty().bind(Bindings.createStringBinding(new Callable<String>() {
             @Override
             public String call() throws Exception {
                 return tenerTiempo(Video.getCurrentTime()) + " / ";
@@ -315,20 +385,27 @@ public class Reproductor implements Initializable {
         }, Video.currentTimeProperty()));
     }
 
-    public String tenerTiempo(Duration Tiempo){
-        int horas = (int) Tiempo.toHours();
-        int minutos = (int) Tiempo.toMinutes();
-        int segundos = (int) Tiempo.toSeconds();
 
-        if(segundos > 59) segundos = segundos % 60;
-        if(minutos > 59) minutos = minutos % 60;
-        if(horas > 59) horas = horas % 60;
-        if(horas > 0) return String.format("%d:%02:%02d", horas, minutos, segundos);
-        else return String.format("%02d:%02d", minutos, segundos);
+    private void FinaldelVid(String Tiempo, String Tiempototal) {
+        for (int i = 0; i < Tiempototal.length(); i++) {
+            if (Tiempo.charAt(i) != Tiempototal.charAt(i)) {
+                FindelVid = false;
+                if (reproduciendose) btnPlayStop.setGraphic(Parar);
+                else btnPlayStop.setGraphic(Play);
+                break;
+            } else {
+                FindelVid = true;
+                btnPlayStop.setGraphic(Reiniciar);
+            }
+        }
+
+
+
 
     }
+
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("BusquedadeVideo.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();
@@ -341,7 +418,7 @@ public class Reproductor implements Initializable {
 
 
     }
-
 }
+
 
 
