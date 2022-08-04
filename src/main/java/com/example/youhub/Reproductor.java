@@ -344,9 +344,9 @@ public class Reproductor implements Initializable {
             @Override
             public void changed(ObservableValue<? extends Duration> observableValue, Duration duration, Duration t1) {
                 if (!VidDuracion.isValueChanging()) {
-                    VidDuracion.setValue(duration.toSeconds());
+                    VidDuracion.setValue(t1.toSeconds());
                 }
-                FinaldelVid(TiempoVid.getText(), TiempoTotal.getText());
+                FinaldelVid(TiempoVid .getText(), TiempoTotal.getText());
 
             }
         });
@@ -380,7 +380,7 @@ public class Reproductor implements Initializable {
         TiempoTotal.textProperty().bind(Bindings.createStringBinding(new Callable<String>() {
             @Override
             public String call() throws Exception {
-                return tenerTiempo(Video.getCurrentTime()) + " / ";
+                return tenerTiempo(Video.getCurrentTime());
             }
         }, Video.currentTimeProperty()));
     }
