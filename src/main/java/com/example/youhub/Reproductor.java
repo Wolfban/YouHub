@@ -85,6 +85,20 @@ public class Reproductor implements Initializable {
 
     @FXML
     private VBox vbox;
+    @FXML
+    private Button btnLista;
+    @FXML
+    void CLick(ActionEvent event) {
+
+    }
+    @FXML
+    private Button btnMeGusta;
+
+    @FXML
+    void click(ActionEvent event) {
+
+    }
+
 
     private boolean FindelVid = false;
     private boolean reproduciendose = true;

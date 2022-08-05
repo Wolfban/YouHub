@@ -9,8 +9,7 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vbox" alignment="CENTER" prefHeight="338.0" fx:controller="com.example.youhub.Reproductor" prefWidth="641.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"  >
-
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="549.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Reproductor">
    <children>
       <MediaView fx:id="Vid" />
       <Slider fx:id="VidDuracion">
@@ -38,11 +37,6 @@
                   <Slider fx:id="Volumenn" max="1.0" style="-fx-cursor: hand;" />
                </children>
             </HBox>
-            <Label fx:id="TiempoVid" prefHeight="27.0" prefWidth="57.0">
-               <font>
-                  <Font name="Microsoft YaHei" size="18.0" />
-               </font>
-            </Label>
             <Label fx:id="TiempoTotal" prefHeight="25.0" prefWidth="95.0">
                <font>
                   <Font name="Microsoft YaHei" size="18.0" />
@@ -54,6 +48,20 @@
                   <Insets left="10.0" />
                </HBox.margin>
             </Label>
+            <Label fx:id="TiempoVid" prefHeight="27.0" prefWidth="57.0">
+               <font>
+                  <Font name="Microsoft YaHei" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnMeGusta" minWidth="48.0" mnemonicParsing="false" onAction="#click" prefHeight="41.0" prefWidth="48.0" style="-fx-cursor: hand;">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnLista" minWidth="52.0" mnemonicParsing="false" onAction="#CLick" prefHeight="41.0" prefWidth="58.0" style="-fx-cursor: hand;" text="Lista ">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Button>
             <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                <children>
                   <Label fx:id="Velocidad" layoutX="301.0" layoutY="67.0" prefHeight="27.0" prefWidth="57.0">
@@ -79,6 +87,5 @@
             </HBox>
          </children>
       </HBox>
-      <Button fx:id="btonBuscarVid" mnemonicParsing="false" onAction="#Click" prefHeight="25.0" prefWidth="139.0" style="-fx-cursor: hand;" text="Agregar Video" />
    </children>
 </VBox>
