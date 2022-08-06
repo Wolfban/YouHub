@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea la implementacion para la interfaz del Usuario">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se hace una correccion a los atributos en el modelo de usuario">
       <change beforePath="$PROJECT_DIR$/src/main/java/Interface/DAOUsuarioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interface/DAOUsuarioImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/src/main/resources/com/example/youhub",
     "last_opened_file_path": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/Entregable1/.idea/libraries/javafx-media-18.0.2-linux.jar",
@@ -119,7 +116,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="1405000" />
+      <workItem from="1659785741302" duration="1795000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -240,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659786488104</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Se hace una correccion a los atributos en el modelo de usuario">
+      <created>1659787418261</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659787418261</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +287,8 @@
     <MESSAGE value="Se crea la funcion de regitrar, para registrar un cliente a la tabla" />
     <MESSAGE value="Se crea la funcion de regsitrar, para registrar un cliente a la tabla" />
     <MESSAGE value="Se crea la implementacion para la interfaz del Usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crea la implementacion para la interfaz del Usuario" />
+    <MESSAGE value="Se hace una correccion a los atributos en el modelo de usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se hace una correccion a los atributos en el modelo de usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
