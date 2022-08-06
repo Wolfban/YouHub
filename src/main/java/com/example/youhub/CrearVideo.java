@@ -1,24 +1,27 @@
 package com.example.youhub;
 
+import DAO.DAOVideo;
+import Modelo.Videos;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 
 import java.io.File;
 import java.net.URL;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 public class CrearVideo implements Initializable {
 
+        DAOVideo daoVideo = new DAOVideo();
+
         @FXML
-        private DatePicker Date;
+        private Label Date;
 
         @FXML
         private Label Video;
@@ -33,7 +36,7 @@ public class CrearVideo implements Initializable {
         private Label lblVideo;
 
         @FXML
-        private TextField txt;
+        private TextField txtNombre;
 
         @FXML
         private TextField txtCategoria;
@@ -42,15 +45,58 @@ public class CrearVideo implements Initializable {
         private TextArea txtDescripcion;
 
         @FXML
-        private AnchorPane txtNombre;
+        private AnchorPane anchorPane;
 
 
         private String videoUbicacion = "";
 
 
         @FXML
-        void Click(ActionEvent event) {
+        void subirVideo(ActionEvent event) throws SQLException {
+                String nombre = this.txtNombre.getText();
+                String categoria = this.txtCategoria.getText();
+                String descripcion = this.txtDescripcion.getText();
+                String fechaSubido = this.Date.getText();
 
+                String errorVacio = "";
+
+                if(nombre == ""){
+                        errorVacio += "Por favor introduzca un nombre para el video\n";
+                }
+
+                if(categoria == ""){
+                        errorVacio += "Por favor introduzca una categoria\n";
+                }
+
+                if(descripcion == ""){
+                        errorVacio += "Por favor introduzca una descripcion para el video\n";
+                }
+
+                if(fechaSubido == ""){
+                        errorVacio += "Por favor introduzca una fecha\n";
+                }
+
+                if(videoUbicacion == ""){
+                        errorVacio += "Por favor suba un video\n";
+                }
+
+                if(errorVacio.isEmpty()){
+                        Videos videoNuevo = new Videos(nombre, categoria, descripcion, fechaSubido, videoUbicacion);
+
+                        daoVideo.agregarVideo(videoNuevo);
+
+                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                        alert.setHeaderText(null);
+                        alert.setTitle("Listo");
+                        alert.setContentText("Se ha registrado el Video");
+                        alert.showAndWait();
+                }else{
+                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        alert.setHeaderText(null);
+                        alert.setTitle("Error");
+                        alert.setContentText(errorVacio);
+                        alert.showAndWait();
+                }
         }
 
         @FXML
@@ -68,15 +114,21 @@ public class CrearVideo implements Initializable {
                         new FileChooser.ExtensionFilter("MP4", ".mp4")
                 );
 
-                File imgFile = fileChooser.showOpenDialog(null);
-                if (imgFile != null){
-                        Video.setText(imgFile.toString());
-                        videoUbicacion = imgFile.toString();
+                File videoFile = fileChooser.showOpenDialog(null);
+                if (videoFile != null){
+                        Video.setText(videoFile.toString());
+                        videoUbicacion = videoFile.toString();
                 }
+        }
+
+        public void apuntaFechas (){
+                DateTimeFormatter formateador = DateTimeFormatter.ofPattern("yyyy/mm/dd");
+                LocalDate fechaActual = LocalDate.now();
+                Date.setText(formateador.format(fechaActual));
         }
 
         @Override
         public void initialize(URL url, ResourceBundle resourceBundle) {
-
+                apuntaFechas();
         }
 }
