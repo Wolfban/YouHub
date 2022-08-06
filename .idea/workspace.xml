@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se unen el controlador Login con su fxml">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/Almacenamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/Almacenamiento.java" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Sobrecarga del constructor del modelo Usuarios">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="22373000" />
+      <workItem from="1659785741302" duration="23116000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -433,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659818974196</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Sobrecarga del constructor del modelo Usuarios">
+      <created>1659819167046</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1659819167047</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se empieza con la implementacion de la funcion registrar del DAO" />
     <MESSAGE value="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador" />
     <MESSAGE value="Se crea la funcion registrarUsuario usada para verificar si hay errores en los datos ingresados y para ejecutar el registrar de la interfaz" />
     <MESSAGE value="Se conecta el fxml y controlador del registro de usario" />
@@ -483,7 +490,8 @@
     <MESSAGE value="Se correge el formato en el mque se recopila la fecha y se annade otro tipo de archivo para subir videos" />
     <MESSAGE value="Se corrigen los flitros para buscar archivos" />
     <MESSAGE value="Se unen el controlador Login con su fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se unen el controlador Login con su fxml" />
+    <MESSAGE value="Sobrecarga del constructor del modelo Usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sobrecarga del constructor del modelo Usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -20,4 +20,19 @@ public class DAOUsuario {
             }
         }
     }
+
+    public ResultSet loginUsuario(Usuarios u) throws SQLException{
+        Conexion conexion = Conexion.getInstance();
+
+        String traerUsuario = "SELECT * FROM usuario WHERE correousuario =? AND  contrasennausuario =?";
+
+        try(Connection conexionBase = conexion.openConnection()){
+            try(PreparedStatement st = conexionBase.prepareStatement(traerUsuario)){
+                st.setString(1, u.getCorreo());
+                st.setString(2, u.getContrasenna());
+
+                return st.executeQuery();
+            }
+        }
+    }
 }
