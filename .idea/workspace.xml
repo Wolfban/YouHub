@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se hace la funcion para traer al usuario de la tabla">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea una sobrecarga en el modelo de Usuarios">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/Almacenamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/Almacenamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Login.java" afterDir="false" />
     </list>
@@ -117,7 +120,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="23759000" />
+      <workItem from="1659785741302" duration="24438000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -448,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659820097664</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Se crea una sobrecarga en el modelo de Usuarios">
+      <created>1659820476223</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1659820476223</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se crea la funcion registrarUsuario usada para verificar si hay errores en los datos ingresados y para ejecutar el registrar de la interfaz" />
     <MESSAGE value="Se conecta el fxml y controlador del registro de usario" />
     <MESSAGE value="Se corrige el problema con la interfaz del usuario" />
     <MESSAGE value="Se hace publico el constructor de Conexion" />
@@ -498,7 +507,8 @@
     <MESSAGE value="Se unen el controlador Login con su fxml" />
     <MESSAGE value="Sobrecarga del constructor del modelo Usuarios" />
     <MESSAGE value="Se hace la funcion para traer al usuario de la tabla" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se hace la funcion para traer al usuario de la tabla" />
+    <MESSAGE value="Se crea una sobrecarga en el modelo de Usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea una sobrecarga en el modelo de Usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

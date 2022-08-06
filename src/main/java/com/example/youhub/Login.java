@@ -12,6 +12,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+import java.sql.SQLException;
+
 public class Login {
 
     DAOUsuario daoUsuario = new DAOUsuario();
@@ -29,7 +31,7 @@ public class Login {
     private TextField txtEmail;
 
     @FXML
-    void loginUsuario(ActionEvent event) {
+    void loginUsuario(ActionEvent event) throws SQLException {
         String correo = this.txtEmail.toString();
         String contrasenna = this.TxtContrasenna.toString();
 
@@ -44,7 +46,17 @@ public class Login {
         }
 
         if(errorVacio.isEmpty()){
-            Usuarios loginUsuario = new Usuarios()
+            Usuarios loginUsuario = new Usuarios(correo, contrasenna);
+
+            if(daoUsuario.loginUsuario(loginUsuario)!=""){
+
+            }else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setTitle("Error");
+                alert.setContentText("No existe es usuario");
+                alert.showAndWait();
+            }
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
