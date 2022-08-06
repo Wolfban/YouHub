@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se arregla que el video sea totalmente funcional y que tenga la adición del fullscreen">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se conenctan los botones del me gusta y lista de reproduccion">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/Almacenamiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Reproductor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Reproductor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Reproductor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BusquedadeVideo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BusquedadeVideo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +21,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_COMMON_BRANCH" value="master" />
+    <option name="RECENT_COMMON_BRANCH" value="Agregar_Los_FXML" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="Wolfban" />
+        <option name="repository" value="YouHub" />
+      </RepoCoordinatesHolder>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +105,7 @@
       <workItem from="1659335850224" duration="592000" />
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
-      <workItem from="1659570106128" duration="17425000" />
+      <workItem from="1659570106128" duration="22028000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -151,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659679460364</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Se conenctan los botones del me gusta y lista de reproduccion">
+      <created>1659737689825</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659737689825</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +182,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Author.ColumnIdWidth" value="209" />
@@ -184,14 +204,15 @@
     <MESSAGE value="Se arreglaron los bugs del reproductor y se arreglo los timings para que concuerden con el timer del Video" />
     <MESSAGE value="Se arregla un error con el video y su fxml" />
     <MESSAGE value="Se arregla que el video sea totalmente funcional y que tenga la adición del fullscreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se arregla que el video sea totalmente funcional y que tenga la adición del fullscreen" />
+    <MESSAGE value="Se conenctan los botones del me gusta y lista de reproduccion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se conenctan los botones del me gusta y lista de reproduccion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java</url>
-          <line>404</line>
+          <line>387</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

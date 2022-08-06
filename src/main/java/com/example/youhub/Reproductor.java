@@ -3,6 +3,7 @@ package com.example.youhub;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
+import javafx.beans.property.DoubleProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -117,43 +118,27 @@ public class Reproductor implements Initializable {
     private Button btnElegirVid;
 
 
+
     @FXML
-    void Click(ActionEvent event) throws IOException {
-        buscarVideo();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor .fxml"));
-        Parent root = loader.load();
-        BusquedadeVideo controlador = loader.getController();
-        Scene scene1 = new Scene(root);
-        Stage stage = new Stage();
-        stage.setScene(scene1);
-        stage.show();
+    void Click(ActionEvent event) {
+        buscarVideo(event);
 
-
-        stage.setOnCloseRequest(e -> {
-            try {
-                controlador.closeWindows();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-
-        Stage myStage = (Stage) this.btnElegirVid.getScene().getWindow();
-        myStage.close();
     }
 
     private String lgar;
 
-    public void buscarVideo() {
+    public void buscarVideo(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Buscar Video");
-        File File = fileChooser.showOpenDialog(null);
-        lgar = File.toURI().toString();
+        File file = fileChooser.showOpenDialog(null);
+        lgar = file.toURI().toString();
         if (lgar != null) {
             Media vid = new Media(lgar);
-            Reproductor.Video = new MediaPlayer(vid);
+          Video = new MediaPlayer(vid);
+          Vid.setMediaPlayer(Video);
 
-            Reproductor.Video.play();
+
+          Video.play();
         }
     }
 
@@ -161,9 +146,7 @@ public class Reproductor implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         final int Tamanio = 25;
-        mediaVid = new Media(new File("src/main/resources/SG.mp4").toURI().toString());
-        Video = new MediaPlayer(mediaVid);
-        Vid.setMediaPlayer(Video);
+
 
         Image imgPlay = new Image(new File("src/main/resources/play.png ").toURI().toString());
         Play = new ImageView(imgPlay);
