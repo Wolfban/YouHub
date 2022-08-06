@@ -6,5 +6,4 @@ public class DAOUsuario {
     public void registrar(Usuarios u) throws Exception {
 
     }
-
 }
