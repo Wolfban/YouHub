@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/CrearVideo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/CrearVideo.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Creacion de la funcion apuntafechas para setear la fecha del video" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +114,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="16306000" />
+      <workItem from="1659785741302" duration="16647000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -379,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659805949398</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Creacion de la funcion apuntafechas para setear la fecha del video">
+      <created>1659808148828</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1659808148828</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +407,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se inicia con el proceso de conexion a la base de datos y el del DAO" />
     <MESSAGE value="Se crean los procesos de conexion a la base de datos" />
     <MESSAGE value="Se crea la interfaz" />
     <MESSAGE value="Se crea la funcion de regitrar, para registrar un cliente a la tabla" />
@@ -429,7 +431,8 @@
     <MESSAGE value="Se creacion del modelo del video" />
     <MESSAGE value="Creacion del DAO para el video" />
     <MESSAGE value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
+    <MESSAGE value="Creacion de la funcion apuntafechas para setear la fecha del video" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la funcion apuntafechas para setear la fecha del video" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
