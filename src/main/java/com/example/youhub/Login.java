@@ -24,7 +24,7 @@ public class Login {
     private TextField txtEmail;
 
     @FXML
-    void Click(ActionEvent event) {
+    void loginUsuario(ActionEvent event) {
 
     }
 

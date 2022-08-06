@@ -16,6 +16,10 @@ public class Usuarios {
         this.contrasenna = contrasenna;
     }
 
+    public Usuarios() {
+
+    }
+
     public String getNombre() {
         return Nombre;
     }
