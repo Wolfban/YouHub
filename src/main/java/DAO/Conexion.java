@@ -8,7 +8,7 @@ public class Conexion {
 
     private static Conexion instance;
 
-    public Conexion (){
+    private Conexion(){
 
     }
 
@@ -22,7 +22,7 @@ public class Conexion {
 
     public Connection openConnection() throws SQLException {
         closeConnection();
-        this.conexion= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/instance","root","Pokemon.2012");
+        this.conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/YouHub","root","Pokemon.2012");
 
         return this.conexion;
     }

@@ -3,8 +3,6 @@ package com.example.youhub;
 /**
  * @author Esteban Barrera
  */
-import Interface.DAOUsuario;
-import Interface.DAOUsuarioImpl;
 import Modelo.Usuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,8 +15,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Register implements Initializable {
-
-    DAOUsuario daoUsuario = new DAOUsuarioImpl();
 
     @FXML
     private Button btnLogin;
@@ -72,11 +68,6 @@ public class Register implements Initializable {
             if (contrasennaUsuario.equals(contrasennaConfir)){
                 Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
 
-                try{
-                    daoUsuario.registrar(usuarioNuevo);
-                }catch(Exception e){
-                    System.out.println(e.getMessage());
-                }
 
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText(null);
