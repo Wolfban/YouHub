@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<HBox prefHeight="552.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<HBox prefHeight="552.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Login">
    <children>
       <AnchorPane prefHeight="552.0" prefWidth="297.0" style="-fx-background-color: #26798E;">
          <children>
@@ -18,7 +17,7 @@
       </AnchorPane>
       <AnchorPane prefHeight="581.0" prefWidth="465.0" style="-fx-background-color: #FFE3B3;">
          <children>
-            <TextField fx:id="txtContrasenna" layoutX="169.0" layoutY="348.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="TxtContrasenna" layoutX="169.0" layoutY="348.0" prefHeight="25.0" prefWidth="254.0" />
             <Label layoutX="14.0" layoutY="262.0" prefHeight="50.0" prefWidth="171.0" text="Correo Electrónico">
                <font>
                   <Font size="20.0" />
