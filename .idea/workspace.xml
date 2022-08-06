@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Commit and push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +20,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_COMMON_BRANCH" value="Agregar_Los_FXML" />
+    <option name="RECENT_COMMON_BRANCH" value="AgregarVideos" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -99,7 +104,7 @@
       <workItem from="1659335850224" duration="592000" />
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
-      <workItem from="1659570106128" duration="35839000" />
+      <workItem from="1659570106128" duration="38846000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -178,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659771823535</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit and push">
+      <created>1659776708191</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659776708191</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +202,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="SHOW_ROOT_NAMES" value="true" />
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Author.ColumnIdWidth" value="209" />
@@ -215,7 +226,8 @@
     <MESSAGE value="Se conenctan los botones del me gusta y lista de reproduccion" />
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
+    <MESSAGE value="Commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit and push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
