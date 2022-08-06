@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se empieza con la implementacion de la funcion registrar del DAO">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +118,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="2760000" />
+      <workItem from="1659785741302" duration="3362000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659788172501</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador">
+      <created>1659788628926</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659788628926</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +313,8 @@
     <MESSAGE value="Se hace una correccion a los atributos en el modelo de usuario" />
     <MESSAGE value="Se crea el proceso para annadir un usuario que se esta registrando en la tabal de usuarios" />
     <MESSAGE value="Se empieza con la implementacion de la funcion registrar del DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se empieza con la implementacion de la funcion registrar del DAO" />
+    <MESSAGE value="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

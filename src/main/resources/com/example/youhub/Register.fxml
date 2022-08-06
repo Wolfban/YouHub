@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="857.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="857.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Register">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #26798E;">
          <children>
@@ -20,7 +20,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="669.0" prefWidth="600.0" style="-fx-background-color: #FFE3B3;">
+      <AnchorPane prefHeight="661.0" prefWidth="541.0" style="-fx-background-color: #FFE3B3;">
          <children>
             <TextField fx:id="txtNombre" layoutX="190.0" layoutY="233.0" prefHeight="25.0" prefWidth="297.0" />
             <Label layoutX="29.0" layoutY="226.0" prefHeight="39.0" prefWidth="117.0" text="Nombre">

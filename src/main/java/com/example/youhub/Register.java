@@ -5,9 +5,11 @@ package com.example.youhub;
  */
 import Interface.DAOUsuario;
 import Interface.DAOUsuarioImpl;
+import Modelo.Usuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -44,6 +46,49 @@ public class Register implements Initializable {
         String correoUsuario = this.txtEmail.getText();
         String contrasennaUsuario = this.txtContrasenna.getText();
         String contrasennaConfir = this.txtConfirContrasenna.getText();
+
+        String errorVacio = "";
+
+        if(nombreUsuario == ""){
+            errorVacio += "Por favor ingrese su nombre\n";
+        }
+
+        if(correoUsuario == ""){
+            errorVacio += "Por favor ingrese su correo\n";
+        }
+
+        if(contrasennaUsuario == ""){
+            errorVacio += "Por favor ingrese una contrasenna\n";
+        }
+
+        if(contrasennaConfir == ""){
+            errorVacio += "Por favor ingrese una contrasenna poara comparar\n";
+        }
+
+        if (errorVacio.isEmpty()){
+            if (contrasennaUsuario == contrasennaConfir){
+                Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
+
+                try{
+                    daoUsuario.registrar(usuarioNuevo);
+                }catch(Exception e){
+                    System.out.println(e.getMessage());
+                }
+
+            }else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setTitle("Error");
+                alert.setContentText("Las contrasennas no coinciden");
+                alert.showAndWait();
+            }
+        }else{
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText(errorVacio);
+            alert.showAndWait();
+        }
     }
 
     @FXML
