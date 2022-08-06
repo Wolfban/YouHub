@@ -9,7 +9,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -19,7 +21,7 @@ public class CrearVideo implements Initializable {
         private DatePicker Date;
 
         @FXML
-        private TextField Video;
+        private Label Video;
 
         @FXML
         private Button btnAgregar;
@@ -42,6 +44,10 @@ public class CrearVideo implements Initializable {
         @FXML
         private AnchorPane txtNombre;
 
+
+        private String videoUbicacion = "";
+
+
         @FXML
         void Click(ActionEvent event) {
 
@@ -52,6 +58,22 @@ public class CrearVideo implements Initializable {
 
         }
 
+
+        public void buscarVideo(){
+                FileChooser fileChooser = new FileChooser();
+                fileChooser.setTitle("Buscar Video");
+
+                fileChooser.getExtensionFilters().addAll(
+                        new FileChooser.ExtensionFilter("All Videos", "."),
+                        new FileChooser.ExtensionFilter("MP4", ".mp4")
+                );
+
+                File imgFile = fileChooser.showOpenDialog(null);
+                if (imgFile != null){
+                        Video.setText(imgFile.toString());
+                        videoUbicacion = imgFile.toString();
+                }
+        }
 
         @Override
         public void initialize(URL url, ResourceBundle resourceBundle) {
