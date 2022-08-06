@@ -25,12 +25,6 @@ public class Register implements Initializable {
     private Button btnRegistrar;
 
     @FXML
-    private TextField txtApellido1;
-
-    @FXML
-    private TextField txtApellido2;
-
-    @FXML
     private TextField txtConfirContrasenna;
 
     @FXML
@@ -40,16 +34,16 @@ public class Register implements Initializable {
     private TextField txtEmail;
 
     @FXML
-    private TextField txtID;
-
-    @FXML
     private TextField txtNombre;
 
 
 
     @FXML
-    void Click(ActionEvent event) {
-
+    void registrarUsuario(ActionEvent event) {
+        String nombreUsuario = this.txtNombre.getText();
+        String correoUsuario = this.txtEmail.getText();
+        String contrasennaUsuario = this.txtContrasenna.getText();
+        String contrasennaConfir = this.txtConfirContrasenna.getText();
     }
 
     @FXML

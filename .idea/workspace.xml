@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea el proceso para annadir un usuario que se esta registrando en la tabal de usuarios">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se empieza con la implementacion de la funcion registrar del DAO">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +116,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="2277000" />
+      <workItem from="1659785741302" duration="2760000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -252,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659787603335</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Se empieza con la implementacion de la funcion registrar del DAO">
+      <created>1659788172501</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659788172501</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +303,8 @@
     <MESSAGE value="Se crea la implementacion para la interfaz del Usuario" />
     <MESSAGE value="Se hace una correccion a los atributos en el modelo de usuario" />
     <MESSAGE value="Se crea el proceso para annadir un usuario que se esta registrando en la tabal de usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crea el proceso para annadir un usuario que se esta registrando en la tabal de usuarios" />
+    <MESSAGE value="Se empieza con la implementacion de la funcion registrar del DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se empieza con la implementacion de la funcion registrar del DAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
