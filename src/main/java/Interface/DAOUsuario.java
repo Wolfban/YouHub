@@ -2,8 +2,6 @@ package Interface;
 
 import Modelo.Usuarios;
 
-public class DAOUsuario {
-    public void registrar(Usuarios u) throws Exception {
-
-    }
+public interface DAOUsuario {
+    public void registrar(Usuarios u) throws Exception;
 }
