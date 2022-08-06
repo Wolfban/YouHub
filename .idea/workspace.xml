@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se termina el porceso de registro del usuario">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se empieza con la construccion del modelo del video y su DAO">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="13424000" />
+      <workItem from="1659785741302" duration="13720000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -350,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659801032698</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Se empieza con la construccion del modelo del video y su DAO">
+      <created>1659805021600</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1659805021600</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +381,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se conenctan los botones del me gusta y lista de reproduccion" />
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
@@ -400,7 +405,8 @@
     <MESSAGE value="Se crea la funcion para annadir un usuario a la tabla" />
     <MESSAGE value="Se annade una libreria para la base dato (.jar)" />
     <MESSAGE value="Se termina el porceso de registro del usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se termina el porceso de registro del usuario" />
+    <MESSAGE value="Se empieza con la construccion del modelo del video y su DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se empieza con la construccion del modelo del video y su DAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
