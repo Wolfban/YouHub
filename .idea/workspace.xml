@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se conecta el fxml y controlador del registro de usario">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se corrige el problema con la interfaz del usuario" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +114,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="3991000" />
+      <workItem from="1659785741302" duration="4317000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -280,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659789370026</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Se corrige el problema con la interfaz del usuario">
+      <created>1659789925785</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659789925785</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +333,8 @@
     <MESSAGE value="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador" />
     <MESSAGE value="Se crea la funcion registrarUsuario usada para verificar si hay errores en los datos ingresados y para ejecutar el registrar de la interfaz" />
     <MESSAGE value="Se conecta el fxml y controlador del registro de usario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se conecta el fxml y controlador del registro de usario" />
+    <MESSAGE value="Se corrige el problema con la interfaz del usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se corrige el problema con la interfaz del usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

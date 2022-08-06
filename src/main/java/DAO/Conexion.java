@@ -8,7 +8,7 @@ public class Conexion {
 
     private static Conexion instance;
 
-    private Conexion (){
+    public Conexion (){
 
     }
 
