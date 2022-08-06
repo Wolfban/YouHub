@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea la funcion para annadir un usuario a la tabla">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se annade una libreria para la base dato (.jar)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +117,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="11791000" />
+      <workItem from="1659785741302" duration="12500000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -337,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659798305038</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Se annade una libreria para la base dato (.jar)">
+      <created>1659800370888</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1659800370888</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +368,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se arregla un error con el video y su fxml" />
     <MESSAGE value="Se arregla que el video sea totalmente funcional y que tenga la adición del fullscreen" />
     <MESSAGE value="Se conenctan los botones del me gusta y lista de reproduccion" />
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
@@ -387,7 +392,8 @@
     <MESSAGE value="Se crea el asocie para agregar un usuario a la tabla" />
     <MESSAGE value="Se cambia el atributo conexion de protected a private" />
     <MESSAGE value="Se crea la funcion para annadir un usuario a la tabla" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crea la funcion para annadir un usuario a la tabla" />
+    <MESSAGE value="Se annade una libreria para la base dato (.jar)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se annade una libreria para la base dato (.jar)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

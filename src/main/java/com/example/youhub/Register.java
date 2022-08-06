@@ -98,11 +98,6 @@ public class Register implements Initializable {
         daoUsuario.agregarUsuario(nuevoUsuario);
     }
 
-    @FXML
-    void click(ActionEvent event) {
-
-    }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
