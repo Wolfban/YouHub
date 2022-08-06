@@ -123,7 +123,7 @@ public class Reproductor implements Initializable {
     @FXML
     void Click(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor .fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor.fxml"));
         Parent root = loader.load();
         Principal controlador = loader.getController();
         Scene scene1 = new Scene(root);

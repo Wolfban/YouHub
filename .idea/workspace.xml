@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Creacion de la funcion apuntafechas para setear la fecha del video" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se asigna la funcion para subir un video a su boton respectivo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +120,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="16647000" />
+      <workItem from="1659785741302" duration="17396000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -382,7 +388,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659808148828</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Edicion del formulario para los videos">
+      <created>1659808271540</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1659808271540</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Se asigna la funcion para subir un video a su boton respectivo">
+      <created>1659808397024</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1659808397024</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,8 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se crean los procesos de conexion a la base de datos" />
-    <MESSAGE value="Se crea la interfaz" />
     <MESSAGE value="Se crea la funcion de regitrar, para registrar un cliente a la tabla" />
     <MESSAGE value="Se crea la funcion de regsitrar, para registrar un cliente a la tabla" />
     <MESSAGE value="Se crea la implementacion para la interfaz del Usuario" />
@@ -432,7 +450,9 @@
     <MESSAGE value="Creacion del DAO para el video" />
     <MESSAGE value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
     <MESSAGE value="Creacion de la funcion apuntafechas para setear la fecha del video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la funcion apuntafechas para setear la fecha del video" />
+    <MESSAGE value="Edicion del formulario para los videos" />
+    <MESSAGE value="Se asigna la funcion para subir un video a su boton respectivo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se asigna la funcion para subir un video a su boton respectivo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

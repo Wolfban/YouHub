@@ -32,8 +32,6 @@ public class CrearVideo implements Initializable {
         @FXML
         private Button btnSubirVid;
 
-        @FXML
-        private Label lblVideo;
 
         @FXML
         private TextField txtNombre;
@@ -99,10 +97,6 @@ public class CrearVideo implements Initializable {
                 }
         }
 
-        @FXML
-        void click(ActionEvent event) {
-
-        }
 
 
         public void buscarVideo(){
