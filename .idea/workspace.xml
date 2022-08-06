@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Commit and push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Usuarios.java" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se inicia con el proceso de conexion a la base de datos y el del DAO">
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +16,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_COMMON_BRANCH" value="AgregarVideos" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
@@ -40,6 +41,14 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2CcTakOyqmS9lIc1Xx8uzM00HPB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -57,6 +66,10 @@
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/src/main/resources/com/example/youhub",
     "last_opened_file_path": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/Entregable1/.idea/libraries/javafx-media-18.0.2-linux.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -105,6 +118,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
+      <workItem from="1659785741302" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -190,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659776708191</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Se inicia con el proceso de conexion a la base de datos y el del DAO">
+      <created>1659785859057</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659785859057</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +248,8 @@
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit and push" />
+    <MESSAGE value="Se inicia con el proceso de conexion a la base de datos y el del DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se inicia con el proceso de conexion a la base de datos y el del DAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
