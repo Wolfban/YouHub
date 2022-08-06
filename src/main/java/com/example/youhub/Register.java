@@ -3,6 +3,7 @@ package com.example.youhub;
 /**
  * @author Esteban Barrera
  */
+import DAO.*;
 import Modelo.Usuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,9 +13,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class Register implements Initializable {
+
+    DAOUsuario daoUsuario =  new DAOUsuario();
 
     @FXML
     private Button btnLogin;
@@ -37,14 +41,11 @@ public class Register implements Initializable {
 
 
     @FXML
-    void registrarUsuario(ActionEvent event) {
+    void registrarUsuario(ActionEvent event) throws SQLException {
         String nombreUsuario = this.txtNombre.getText();
         String correoUsuario = this.txtEmail.getText();
         String contrasennaUsuario = this.txtContrasenna.getText();
         String contrasennaConfir = this.txtConfirContrasenna.getText();
-
-        System.out.println(contrasennaUsuario);
-        System.out.println(contrasennaConfir);
 
         String errorVacio = "";
 
@@ -68,6 +69,7 @@ public class Register implements Initializable {
             if (contrasennaUsuario.equals(contrasennaConfir)){
                 Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
 
+                agregarUsuario(usuarioNuevo);
 
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setHeaderText(null);
@@ -89,6 +91,11 @@ public class Register implements Initializable {
             alert.setContentText(errorVacio);
             alert.showAndWait();
         }
+    }
+
+
+    public void agregarUsuario (Usuarios nuevoUsuario) throws SQLException {
+        daoUsuario.agregarUsuario(nuevoUsuario);
     }
 
     @FXML
