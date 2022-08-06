@@ -6,7 +6,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -42,12 +41,14 @@ public class CrearVideo implements Initializable {
         @FXML
         private TextArea txtDescripcion;
 
-        @FXML
-        private AnchorPane anchorPane;
-
 
         private String videoUbicacion = "";
 
+
+        @Override
+        public void initialize(URL url, ResourceBundle resourceBundle) {
+                apuntaFechas();
+        }
 
         @FXML
         void subirVideo(ActionEvent event) throws SQLException {
@@ -105,7 +106,8 @@ public class CrearVideo implements Initializable {
 
                 fileChooser.getExtensionFilters().addAll(
                         new FileChooser.ExtensionFilter("All Videos", "."),
-                        new FileChooser.ExtensionFilter("MP4", ".mp4")
+                        new FileChooser.ExtensionFilter("MP4", ".mp4"),
+                        new FileChooser.ExtensionFilter("MOV", ".mov")
                 );
 
                 File videoFile = fileChooser.showOpenDialog(null);
@@ -116,13 +118,10 @@ public class CrearVideo implements Initializable {
         }
 
         public void apuntaFechas (){
-                DateTimeFormatter formateador = DateTimeFormatter.ofPattern("yyyy/mm/dd");
+                DateTimeFormatter formateador = DateTimeFormatter.ofPattern("yyyy/MM/dd");
                 LocalDate fechaActual = LocalDate.now();
                 Date.setText(formateador.format(fechaActual));
         }
 
-        @Override
-        public void initialize(URL url, ResourceBundle resourceBundle) {
-                apuntaFechas();
-        }
+
 }

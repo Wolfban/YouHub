@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se edita el fxml Register y el Controlador del formulario para subir videos">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se importa todos los elementos del package DAO">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/CrearVideo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/CrearVideo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +118,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="17701000" />
+      <workItem from="1659785741302" duration="19495000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -405,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659809244422</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Se importa todos los elementos del package DAO">
+      <created>1659809437335</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1659809437335</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +439,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se crea la funcion de regsitrar, para registrar un cliente a la tabla" />
     <MESSAGE value="Se crea la implementacion para la interfaz del Usuario" />
     <MESSAGE value="Se hace una correccion a los atributos en el modelo de usuario" />
     <MESSAGE value="Se crea el proceso para annadir un usuario que se esta registrando en la tabal de usuarios" />
@@ -455,7 +463,8 @@
     <MESSAGE value="Edicion del formulario para los videos" />
     <MESSAGE value="Se asigna la funcion para subir un video a su boton respectivo" />
     <MESSAGE value="Se edita el fxml Register y el Controlador del formulario para subir videos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se edita el fxml Register y el Controlador del formulario para subir videos" />
+    <MESSAGE value="Se importa todos los elementos del package DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se importa todos los elementos del package DAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
