@@ -105,9 +105,9 @@ public class CrearVideo implements Initializable {
                 fileChooser.setTitle("Buscar Video");
 
                 fileChooser.getExtensionFilters().addAll(
-                        new FileChooser.ExtensionFilter("All Videos", "."),
-                        new FileChooser.ExtensionFilter("MP4", ".mp4"),
-                        new FileChooser.ExtensionFilter("MOV", ".mov")
+                        new FileChooser.ExtensionFilter("*All Videos*", "*.*"),
+                        new FileChooser.ExtensionFilter("*MP4*", "*.mp4*"),
+                        new FileChooser.ExtensionFilter("*MOV*", "*.mov*")
                 );
 
                 File videoFile = fileChooser.showOpenDialog(null);
