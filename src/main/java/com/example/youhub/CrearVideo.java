@@ -1,6 +1,6 @@
 package com.example.youhub;
 
-import DAO.DAOVideo;
+import DAO.*;
 import Modelo.Videos;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
