@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se decide probar otro metodo para lograr el DAO">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea el asocie para agregar un usuario a la tabla">
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="8730000" />
+      <workItem from="1659785741302" duration="9028000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -315,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659793660537</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Se crea el asocie para agregar un usuario a la tabla">
+      <created>1659797247622</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1659797247622</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +346,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se agregan los pngs a los botones" />
     <MESSAGE value="Se agregan las funciones de los botones junto a las funciones de pantalla completa" />
     <MESSAGE value="Se arreglaron los bugs del reproductor y se arreglo los timings para que concuerden con el timer del Video" />
     <MESSAGE value="Se arregla un error con el video y su fxml" />
@@ -365,7 +370,8 @@
     <MESSAGE value="Se hace publico el constructor de Conexion" />
     <MESSAGE value="Se corrige la verificacion de las contrasennas y se annade un alert de confirmacion" />
     <MESSAGE value="Se decide probar otro metodo para lograr el DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se decide probar otro metodo para lograr el DAO" />
+    <MESSAGE value="Se crea el asocie para agregar un usuario a la tabla" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea el asocie para agregar un usuario a la tabla" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

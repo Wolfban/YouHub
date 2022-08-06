@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class Conexion {
 
-    protected Connection conexion;
+    private Connection conexion;
 
     private static Conexion instance;
 
