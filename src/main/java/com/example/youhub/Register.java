@@ -47,6 +47,9 @@ public class Register implements Initializable {
         String contrasennaUsuario = this.txtContrasenna.getText();
         String contrasennaConfir = this.txtConfirContrasenna.getText();
 
+        System.out.println(contrasennaUsuario);
+        System.out.println(contrasennaConfir);
+
         String errorVacio = "";
 
         if(nombreUsuario == ""){
@@ -66,7 +69,7 @@ public class Register implements Initializable {
         }
 
         if (errorVacio.isEmpty()){
-            if (contrasennaUsuario == contrasennaConfir){
+            if (contrasennaUsuario.equals(contrasennaConfir)){
                 Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
 
                 try{
@@ -74,6 +77,12 @@ public class Register implements Initializable {
                 }catch(Exception e){
                     System.out.println(e.getMessage());
                 }
+
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Listo");
+                alert.setContentText("Se ha registrado el Usuario");
+                alert.showAndWait();
 
             }else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
