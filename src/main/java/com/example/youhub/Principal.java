@@ -7,19 +7,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 
 /**
  * @author Esteban Barrera
  */
 
-public class BusquedadeVideo {
+public class Principal {
 
     @FXML
     private Button btnBuscarVid;
@@ -52,7 +48,7 @@ public class BusquedadeVideo {
     private String lgar;
 
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("BusquedadeVideo.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();

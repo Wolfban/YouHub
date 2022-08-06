@@ -31,6 +31,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -104,6 +105,7 @@ public class Reproductor implements Initializable {
     private boolean reproduciendose = true;
     private boolean Silenciado = true;
 
+    private ImageView Like;
     private ImageView Play;
     private ImageView Parar;
     private ImageView Silenciar;
@@ -117,12 +119,13 @@ public class Reproductor implements Initializable {
     private Button btnElegirVid;
 
 
+
     @FXML
     void Click(ActionEvent event) throws IOException {
-        buscarVideo();
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor .fxml"));
         Parent root = loader.load();
-        BusquedadeVideo controlador = loader.getController();
+        Principal controlador = loader.getController();
         Scene scene1 = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene1);
@@ -144,26 +147,27 @@ public class Reproductor implements Initializable {
 
     private String lgar;
 
-    public void buscarVideo() {
+
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        final int Tamanio = 25;
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Buscar Video");
         File File = fileChooser.showOpenDialog(null);
         lgar = File.toURI().toString();
         if (lgar != null) {
             Media vid = new Media(lgar);
-            Reproductor.Video = new MediaPlayer(vid);
-
-            Reproductor.Video.play();
+            Video = new MediaPlayer(vid);
+            Vid.setMediaPlayer(Video);
+            Video.play();
         }
-    }
 
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        final int Tamanio = 25;
-        mediaVid = new Media(new File("src/main/resources/SG.mp4").toURI().toString());
-        Video = new MediaPlayer(mediaVid);
-        Vid.setMediaPlayer(Video);
+        Image imgCorazon = new Image(new File("src/main/resources/Like.png ").toURI().toString());
+        Like = new ImageView(imgCorazon);
+        Like.setFitWidth(Tamanio);
+        Like.setFitHeight(Tamanio);
 
         Image imgPlay = new Image(new File("src/main/resources/play.png ").toURI().toString());
         Play = new ImageView(imgPlay);
@@ -201,6 +205,7 @@ public class Reproductor implements Initializable {
         Salir.setFitWidth(Tamanio);
 
         btnPlayStop.setGraphic(Parar);
+        btnMeGusta.setGraphic(Like);
         lblVolumen.setGraphic(Silenciar);
         Velocidad.setText("1x");
         PantallaCompleta.setGraphic(FullScreen);
@@ -433,6 +438,3 @@ public class Reproductor implements Initializable {
 
     }
 }
-
-
-
