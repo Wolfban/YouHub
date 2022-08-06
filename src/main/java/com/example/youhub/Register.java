@@ -3,6 +3,8 @@ package com.example.youhub;
 /**
  * @author Esteban Barrera
  */
+import Interface.DAOUsuario;
+import Interface.DAOUsuarioImpl;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,6 +15,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Register implements Initializable {
+
+    DAOUsuario daoUsuario = new DAOUsuarioImpl();
 
     @FXML
     private Button btnLogin;
