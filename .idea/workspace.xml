@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se inicia con el proceso de conexion a la base de datos y el del DAO">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea la implementacion para la interfaz del Usuario">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interface/DAOUsuarioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interface/DAOUsuarioImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +119,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659785741302" duration="465000" />
+      <workItem from="1659785741302" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -211,7 +212,35 @@
       <option name="project" value="LOCAL" />
       <updated>1659785859057</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Se crean los procesos de conexion a la base de datos">
+      <created>1659786248229</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786248229</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Se crea la interfaz">
+      <created>1659786323538</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786323538</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Se crea la funcion de regsitrar, para registrar un cliente a la tabla">
+      <created>1659786423661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786423661</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Se crea la implementacion para la interfaz del Usuario">
+      <created>1659786488104</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786488104</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +278,12 @@
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
     <MESSAGE value="Se inicia con el proceso de conexion a la base de datos y el del DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se inicia con el proceso de conexion a la base de datos y el del DAO" />
+    <MESSAGE value="Se crean los procesos de conexion a la base de datos" />
+    <MESSAGE value="Se crea la interfaz" />
+    <MESSAGE value="Se crea la funcion de regitrar, para registrar un cliente a la tabla" />
+    <MESSAGE value="Se crea la funcion de regsitrar, para registrar un cliente a la tabla" />
+    <MESSAGE value="Se crea la implementacion para la interfaz del Usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea la implementacion para la interfaz del Usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
