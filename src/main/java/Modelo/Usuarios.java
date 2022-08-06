@@ -16,6 +16,11 @@ public class Usuarios {
         this.contrasenna = contrasenna;
     }
 
+    public Usuarios(String correo, String contrasenna) {
+        this.correo = correo;
+        this.contrasenna = contrasenna;
+    }
+
     public Usuarios() {
 
     }
