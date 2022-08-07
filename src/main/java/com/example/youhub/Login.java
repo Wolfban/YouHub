@@ -17,7 +17,7 @@ import java.sql.SQLException;
 
 public class Login {
 
-    DAOUsuario daoUsuario = new DAOUsuario();
+    DAOLogIn daoLogIn = new DAOLogIn();
 
     @FXML
     private TextField txtContrasenna;
@@ -33,8 +33,8 @@ public class Login {
 
     @FXML
     void loginUsuario(ActionEvent event) throws SQLException {
-        String correo = this.txtEmail.toString();
-        String contrasenna = this.txtContrasenna.toString();
+        String correo = this.txtEmail.getText();
+        String contrasenna = this.txtContrasenna.getText();
 
         String errorVacio = "";
 
@@ -47,10 +47,10 @@ public class Login {
         }
 
         if(errorVacio.isEmpty()){
-            if(daoUsuario.traerCorreo(correo) == true){
-                if(daoUsuario.traerContrasenna(contrasenna)==true){
+            if(!daoLogIn.ingresarUsuario(correo, contrasenna)){
                     Usuarios usuarioIngresado = new Usuarios(correo);
-                    Almacenamiento usuarioActual = new Almacenamiento(usuarioIngresado);
+                    Almacenamiento usuarioActual = new Almacenamiento();
+                    usuarioActual.setUsuarioActual(usuarioIngresado);
 
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setHeaderText(null);
@@ -59,13 +59,7 @@ public class Login {
                     alert.showAndWait();
 
                     System.out.println(usuarioActual);
-                }else{
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setHeaderText(null);
-                    alert.setTitle("Error");
-                    alert.setContentText("Este usuario con esa contrasenna no existe");
-                    alert.showAndWait();
-                }
+
             }else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);

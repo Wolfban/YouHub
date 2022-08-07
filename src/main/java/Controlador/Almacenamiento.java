@@ -14,6 +14,11 @@ public class Almacenamiento {
         this.usuarioActual = new Usuarios();
     }
 
+    public Almacenamiento() {
+
+    }
+
+
     public Usuarios getUsuarioActual() {
         return usuarioActual;
     }
