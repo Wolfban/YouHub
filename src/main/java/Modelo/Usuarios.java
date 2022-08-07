@@ -20,6 +20,10 @@ public class Usuarios {
 
     }
 
+    public Usuarios(String correo) {
+        this.correo = correo;
+    }
+
     public String getNombre() {
         return Nombre;
     }

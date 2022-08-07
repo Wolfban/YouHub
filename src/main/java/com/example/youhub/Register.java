@@ -67,7 +67,7 @@ public class Register implements Initializable {
 
         if (errorVacio.isEmpty()){
             if (contrasennaUsuario.equals(contrasennaConfir)){
-                if(daoUsuario.traerUsuario(correoUsuario)==false){
+                if(daoUsuario.traerCorreo(correoUsuario)==false){
                     Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
                     agregarUsuario(usuarioNuevo);
 

@@ -1,27 +1,12 @@
 package DAO;
 
-import Modelo.Usuarios;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-import java.sql.*;
-
-public class DAOUsuario {
-    public int agregarUsuario(Usuarios u) throws SQLException{
-        Conexion conexion = Conexion.getInstance();
-
-        String insertUsuario = "INSERT INTO usuario(nombreusuario, correousuario, contrasennausuario) VALUES (?, ?, ?)";
-
-        try(Connection conexionBase = conexion.openConnection()){
-            try(PreparedStatement st = conexionBase.prepareStatement(insertUsuario)){
-                st.setString(1, u.getNombre());
-                st.setString(2, u.getCorreo());
-                st.setString(3, u.getContrasenna());
-
-                return st.executeUpdate();
-            }
-        }
-    }
-
-    public boolean traerCorreo (String correo) throws SQLException{
+public class DAOLogIn {
+    public boolean traerCorreo (String correo) throws SQLException {
         Conexion conexion = Conexion.getInstance();
 
         String buscarCorreo = "SELECT * FROM usuario WHERE correousuario=?";
@@ -57,5 +42,4 @@ public class DAOUsuario {
 
         return false;
     }
-
 }
