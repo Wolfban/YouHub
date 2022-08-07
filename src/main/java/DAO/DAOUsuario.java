@@ -21,5 +21,22 @@ public class DAOUsuario {
         }
     }
 
+    public boolean traerUsuario (String correo) throws SQLException{
+        Conexion conexion = Conexion.getInstance();
+
+        String buscarUsuario = "SELECT * FROM usuario WHERE correousuario=?";
+
+        try(Connection conexionBase = conexion.openConnection()){
+            PreparedStatement st = conexionBase.prepareStatement(buscarUsuario);
+            st.setString(1,correo);
+            ResultSet rs = st.executeQuery();
+
+            if (rs.isBeforeFirst()){
+                return true;
+            }
+        }
+
+        return false;
+    }
 
 }

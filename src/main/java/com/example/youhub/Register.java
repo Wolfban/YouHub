@@ -67,15 +67,23 @@ public class Register implements Initializable {
 
         if (errorVacio.isEmpty()){
             if (contrasennaUsuario.equals(contrasennaConfir)){
-                Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
+                if(daoUsuario.traerUsuario(correoUsuario)==false){
+                    Usuarios usuarioNuevo = new Usuarios(nombreUsuario, correoUsuario, contrasennaUsuario);
+                    agregarUsuario(usuarioNuevo);
 
-                agregarUsuario(usuarioNuevo);
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setHeaderText(null);
+                    alert.setTitle("Listo");
+                    alert.setContentText("Se ha registrado el Usuario");
+                    alert.showAndWait();
+                }else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText(null);
+                    alert.setTitle("Error");
+                    alert.setContentText("Este correo ya esta asociado a una cuenta");
+                    alert.showAndWait();
+                }
 
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setHeaderText(null);
-                alert.setTitle("Listo");
-                alert.setContentText("Se ha registrado el Usuario");
-                alert.showAndWait();
 
             }else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
