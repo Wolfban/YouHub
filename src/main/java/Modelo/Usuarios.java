@@ -1,35 +1,27 @@
 package Modelo;
 
+import java.util.Objects;
+
 /**
  * @author Esteban Barrera
  */
 public class Usuarios {
     private String Nombre;
-    private String Apellido1;
-    private String Apellido2;
-    private String Direccion;
-    private int ID;
+    private String correo;
+    private String contrasenna;
 
-    private String Email;
-
-
-    public Usuarios(String nombre, String apellido1, String apellido2, String direccion, int ID, String Email) {
+    public Usuarios(String nombre, String correo, String contrasenna) {
         Nombre = nombre;
-        Apellido1 = apellido1;
-        Apellido2 = apellido2;
-        Direccion = direccion;
-        this.Email = Email;
-        this.ID = ID;
+        this.correo = correo;
+        this.contrasenna = contrasenna;
     }
 
-    public Usuarios(String nombre, String primerApellido, String segundoApellido, String direccion, String correo, int id) {
-        Nombre = nombre;
-        Apellido1 = primerApellido;
-        Apellido2 = segundoApellido;
-        Direccion = direccion;
-        Email = correo;
-        ID = id;
+    public Usuarios() {
 
+    }
+
+    public Usuarios(String correo) {
+        this.correo = correo;
     }
 
     public String getNombre() {
@@ -40,44 +32,29 @@ public class Usuarios {
         Nombre = nombre;
     }
 
-    public String getApellido1() {
-        return Apellido1;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setApellido1(String apellido1) {
-        Apellido1 = apellido1;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public String getApellido2() {
-        return Apellido2;
+    public String getContrasenna() {
+        return contrasenna;
     }
 
-    public void setApellido2(String apellido2) {
-        Apellido2 = apellido2;
+    public void setContrasenna(String contrasenna) {
+        this.contrasenna = contrasenna;
     }
 
-    public String getDireccion() {
-        return Direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        Direccion = direccion;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
+    @Override
+    public String toString() {
+        return "Usuarios{" +
+                "Nombre='" + Nombre + '\'' +
+                ", correo='" + correo + '\'' +
+                ", contrasenna='" + contrasenna + '\'' +
+                '}';
     }
 
     @Override
@@ -85,21 +62,7 @@ public class Usuarios {
         if (this == o) return true;
         if (!(o instanceof Usuarios)) return false;
         Usuarios usuarios = (Usuarios) o;
-        return getID() == usuarios.getID();
-
+        return Nombre.equals(usuarios.Nombre) && correo.equals(usuarios.correo) && contrasenna.equals(usuarios.contrasenna);
     }
-
-
-
-    @Override
-    public String toString() {
-        return "Usuarios{" +
-                "Nombre='" + Nombre + '\'' +
-                ", Apellido1='" + Apellido1 + '\'' +
-                ", Apellido2='" + Apellido2 + '\'' +
-                ", Direccion='" + Direccion + '\'' +
-                ", ID=" + ID +
-                ", Email='" + Email + '\'' +
-                '}';
-    }
+    
 }

@@ -11,6 +11,7 @@ module com.example.youhub {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires javafx.media;
+    requires java.sql;
 
     opens com.example.youhub to javafx.fxml;
     exports com.example.youhub;
