@@ -39,4 +39,22 @@ public class DAOUsuario {
         return false;
     }
 
+    public Usuarios ingresarUsuario(Usuarios u) throws SQLException{
+        Conexion conexion = Conexion.getInstance();
+
+        Usuarios usuarioIngresado= null;
+        String buscarUsuario = "SELECT * FROM usuario WHERE correousuario=? AND contrasennausuario=?";
+
+        try(Connection conexionBase = conexion.openConnection()){
+            PreparedStatement st = conexionBase.prepareStatement(buscarUsuario);
+            st.setString(1, u.getCorreo());
+            st.setString(2, u.getContrasenna());
+            ResultSet rs=st.executeQuery();
+
+            while(rs.next()){
+                usuarioIngresado = new Usuarios()
+            }
+        }
+    }
+
 }
