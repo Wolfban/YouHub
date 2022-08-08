@@ -14,6 +14,8 @@ public class Conexion {
 
     /** Esta función genera una instancia que debe de preparar una conexión entre la aplicación y la base de datos
      * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @return devuelve una nueva conexión. En el caso de que instance sea nulo, crea una nueva oportunidad de conexión.
      */
     public static Conexion getInstance(){
@@ -26,8 +28,9 @@ public class Conexion {
 
     /**Esta función aprovecha la instancia generada por la función anterior para abrir una conexión entre la aplicación y la base de datos
      * Se deben cambiar los parámetros url, user y password de acuerdo a los datos correspondientes del usuario para que la aplicación funcione
-     *@author Ignacio Josue Zelada Araya
-
+     * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @return La conexión creada para enviar y recibir datos entre la aplicación y la base de datos
      * @throws SQLException
      */

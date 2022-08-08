@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Documentación de Conexion.java, DAOLogIn.java, DAOUsuario.javay DAOVideo.java agregada">
+    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Documentación extra en Conexion.java en el método openConnection()">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dox" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,6 +27,19 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Documentación de Conexion.java agregada">
       <created>1659938102560</created>
@@ -41,7 +55,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659941751093</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml">
+      <created>1659945415879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659945415879</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Documentación extra en Conexion.java en el método openConnection()">
+      <created>1659977245267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659977245267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -58,6 +86,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Documentación de Conexion.java agregada" />
     <MESSAGE value="Documentación de Conexion.java, DAOLogIn.java, DAOUsuario.javay DAOVideo.java agregada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentación de Conexion.java, DAOLogIn.java, DAOUsuario.javay DAOVideo.java agregada" />
+    <MESSAGE value="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml" />
+    <MESSAGE value="Documentación extra en Conexion.java en el método openConnection()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentación extra en Conexion.java en el método openConnection()" />
   </component>
 </project>
