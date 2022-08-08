@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se unen las paginas una con la otra">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
@@ -13,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/register.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register.png" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,15 +60,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/src/main/resources/com/example/youhub",
-    "last_opened_file_path": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/lib/mysql-connector-java-8.0.30.zip",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "last_opened_file_path": "C:/Users/igna8/Documents/Cenfotec/2 Cuatri/P.O.O/YouHub/src/main/resources/com/example/youhub",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.youhub" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\igna8\Documents\Cenfotec\2 Cuatri\P.O.O\YouHub\src\main\resources\com\example\youhub" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ExtremeTech\Desktop\Tarea\tarea\YouHub\src\main\resources" />
@@ -108,7 +114,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659914339879" duration="9634000" />
+
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -194,13 +200,36 @@
       <option name="project" value="LOCAL" />
       <updated>1659776708191</updated>
     </task>
-    <task id="LOCAL-00013" summary="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML">
-      <created>1659920724665</created>
+
+    <task id="LOCAL-00013" summary="Se completa el fxml">
+      <created>1659918423850</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1659920724665</updated>
+      <updated>1659918423850</updated>
     </task>
+    <task id="LOCAL-00014" summary="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos.">
+      <created>1659918742390</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659918742390</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Se modifica el module info para que acceda al modelo de videos">
+      <created>1659919730619</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1659919730619</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Se hace funcion para le search bar y la tbvala de los videos">
+      <created>1659921386756</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659921386756</updated>
+    </task>
+
     <task id="LOCAL-00014" summary="Se unen las paginas una con la otra">
       <created>1659925563688</created>
       <option name="number" value="00014" />
@@ -244,7 +273,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente" />
     <MESSAGE value="Se agrega la funcion de buscar videos" />
     <MESSAGE value="Se arregla la funcion en la correcta instancia" />
@@ -257,8 +285,11 @@
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
+
     <MESSAGE value="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML" />
     <MESSAGE value="Se unen las paginas una con la otra" />
     <option name="LAST_COMMIT_MESSAGE" value="Se unen las paginas una con la otra" />
+
+
   </component>
 </project>
