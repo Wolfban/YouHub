@@ -7,11 +7,16 @@ import DAO.*;
 import Modelo.Usuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -110,4 +115,52 @@ public class Register implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
-}
+
+    @FXML
+    void CLICK(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+
+
+        Parent root = loader.load();
+
+
+        Login controlador = loader.getController();
+
+
+        Scene scene1 = new Scene(root);
+        Stage stage = new Stage();
+
+
+        stage.setScene(scene1);
+        stage.show();
+
+
+        stage.setOnCloseRequest(e -> {
+            try {
+                controlador.closeWindows();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+
+        Stage myStage = (Stage) this.btnLogin.getScene().getWindow();
+        myStage.close();
+
+    }
+    public void closeWindows() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+
+        Parent root = loader.load();
+        Object controlador = loader.getController();
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        stage.setScene(scene);
+        stage.show();
+
+
+    }
+    }
+

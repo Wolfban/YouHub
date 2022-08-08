@@ -18,6 +18,7 @@ public class DAOVideo {
      */
     public int agregarVideo(Videos v) throws SQLException {
         Conexion conexion = Conexion.getInstance();
+
         String insertVideo = "INSERT INTO video(nombre, categoria, descripcion, fechasubido, ubicacionlocal) VALUES (?, ?, ?, ?, ?)";
 
         try(Connection conexionBase = conexion.openConnection()){
@@ -32,7 +33,6 @@ public class DAOVideo {
             }
         }
     }
-
 
     public List<Videos> listarVideos() throws SQLException{
         /**La función realiza una conexión a la base de datos para generar la lista de vídeos disponibles en la base de datos en sí
@@ -59,5 +59,4 @@ public class DAOVideo {
             return lista;
         }
     }
-
 }

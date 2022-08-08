@@ -115,6 +115,7 @@ public class Reproductor implements Initializable {
     private ImageView Reiniciar;
 
 
+
     @FXML
     private Button btnElegirVid;
 
@@ -161,6 +162,7 @@ public class Reproductor implements Initializable {
             Media vid = new Media(lgar);
             Video = new MediaPlayer(vid);
             Vid.setMediaPlayer(Video);
+
             Video.play();
         }
 
@@ -424,7 +426,7 @@ public class Reproductor implements Initializable {
     }
 
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();
@@ -434,7 +436,6 @@ public class Reproductor implements Initializable {
 
         stage.setScene(scene);
         stage.show();
-
 
     }
 }
