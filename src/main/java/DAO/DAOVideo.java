@@ -4,7 +4,10 @@ import Modelo.Videos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DAOVideo {
     public int agregarVideo(Videos v) throws SQLException {
@@ -21,6 +24,22 @@ public class DAOVideo {
                 st.setString(5, v.getUbicacionLocal());
 
                 return st.executeUpdate();
+            }
+        }
+    }
+
+    public List<Videos> listarVideos() throws SQLException{
+        Conexion conexion = Conexion.getInstance();
+        List<Videos> lista = null;
+        String traerVideos = "SELECT * FROM video";
+
+        try(Connection conexionBase = conexion.openConnection()){
+            PreparedStatement st = conexionBase.prepareStatement(traerVideos);
+            lista = new ArrayList();
+            ResultSet rs = st.executeQuery();
+            while(rs.next()){
+                Videos vid = new Videos();
+                vid.setNombre();
             }
         }
     }
