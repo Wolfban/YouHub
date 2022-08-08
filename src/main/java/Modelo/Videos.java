@@ -23,6 +23,10 @@ public class Videos {
         this.ubicacionLocal = ubicacionLocal;
     }
 
+    public Videos(){
+
+    }
+
     public String getNombre() {
         return nombre;
     }
