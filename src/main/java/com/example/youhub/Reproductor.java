@@ -115,6 +115,7 @@ public class Reproductor implements Initializable {
     private ImageView Reiniciar;
 
 
+
     @FXML
     private Button btnElegirVid;
 
