@@ -15,7 +15,7 @@
          <children>
             <ImageView fitHeight="129.0" fitWidth="167.0" layoutX="419.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Logo.png" />
+                  <Image url="@Logo.png" />
                </image></ImageView>
             <Label layoutX="241.0" layoutY="78.0" prefHeight="39.0" prefWidth="117.0" text="Registrar">
                <font>
@@ -60,7 +60,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Button fx:id="btnLogin" layoutX="417.0" layoutY="412.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #26798E;" text="Log in">
+            <Button fx:id="btnLogin" layoutX="417.0" layoutY="412.0" mnemonicParsing="false" onAction="#CLICK" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: #26798E;" text="Log in">
                <font>
                   <Font size="14.0" />
                </font>

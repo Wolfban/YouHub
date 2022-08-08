@@ -16,7 +16,7 @@
             <Label layoutX="196.0" layoutY="53.0" prefHeight="57.0" prefWidth="207.0" text="Reproducción más reciente" />
             <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="480.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Logo.png" />
+                  <Image url="@Logo.png" />
                </image>
             </ImageView>
          </children>
@@ -28,9 +28,9 @@
             <TableColumn fx:id="ColuCategoria" prefWidth="240.00006103515625" text="Ruta" />
          </columns>
       </TableView>
-      <Button fx:id="btnBuscarVid" layoutX="54.0" layoutY="508.0" mnemonicParsing="false" onAction="#click" text="Reproducir Video" />
-      <Button fx:id="btnJoin" layoutX="286.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" text="Join Party" />
-      <Button fx:id="btnHost" layoutX="467.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" text="Start Host" />
+      <Button fx:id="btnBuscarVid" layoutX="54.0" layoutY="508.0" mnemonicParsing="false" onAction="#click" style="-fx-background-color: #26798E;" text="Buscar Video" />
+      <Button fx:id="btnJoin" layoutX="286.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" style="-fx-background-color: #26798E;" text="Join Party" />
+      <Button fx:id="btnHost" layoutX="467.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" style="-fx-background-color: #26798E;" text="Start Host" />
       <TableView fx:id="tblVistosRecientes" layoutX="106.0" layoutY="104.0" prefHeight="133.0" prefWidth="389.0">
         <columns>
           <TableColumn fx:id="ColuNombre" prefWidth="137.3333740234375" text="Nombre" />

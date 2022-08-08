@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se agrega El Log in y el registrar">
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.30.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Lock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/register.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Lock.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Reproductor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Reproductor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/register.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/register.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
-      <workItem from="1659914339879" duration="3798000" />
+      <workItem from="1659914339879" duration="8173000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -196,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659776708191</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML">
+      <created>1659920724665</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659920724665</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +253,7 @@
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit and push" />
+    <MESSAGE value="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML" />
   </component>
 </project>
