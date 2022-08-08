@@ -48,7 +48,7 @@ public class Principal {
         Parent root = loader.load();
 
 
-        Login controlador = loader.getController();
+        BuscadorVideos controlador = loader.getController();
 
 
         Scene scene1 = new Scene(root);
@@ -72,12 +72,10 @@ public class Principal {
         myStage.close();
     }
 
-    @FXML
 
-    private String lgar;
 
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();
@@ -87,10 +85,6 @@ public class Principal {
 
         stage.setScene(scene);
         stage.show();
-
-
-
-
 
         Stage myStage = (Stage) this.btnBuscarVid.getScene().getWindow();
         myStage.close();

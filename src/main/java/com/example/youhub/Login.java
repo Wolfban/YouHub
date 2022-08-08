@@ -16,7 +16,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import com.example.youhub.Principal;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -37,7 +37,8 @@ public class Login {
     private TextField txtEmail;
 
     @FXML
-    void loginUsuario(ActionEvent event) throws SQLException {
+    void loginUsuario(ActionEvent event) throws SQLException, IOException {
+        Parent root = null;
         String correo = this.txtEmail.getText();
         String contrasenna = this.txtContrasenna.getText();
 
@@ -52,21 +53,41 @@ public class Login {
         }
 
         if(errorVacio.isEmpty()){
-            if(!daoLogIn.ingresarUsuario(correo, contrasenna)){
-                    Usuarios usuarioIngresado = new Usuarios(correo);
-                    Almacenamiento usuarioActual = new Almacenamiento();
-                    usuarioActual.setUsuarioActual(usuarioIngresado);
+            if(!daoLogIn.ingresarUsuario(correo, contrasenna)) {
+                Usuarios usuarioIngresado = new Usuarios(correo);
+                Almacenamiento usuarioActual = new Almacenamiento();
+                usuarioActual.setUsuarioActual(usuarioIngresado);
 
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setHeaderText(null);
-                    alert.setTitle("Listo");
-                    alert.setContentText("Se ha registrado correctamente");
-                    alert.showAndWait();
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Listo");
+                alert.setContentText("Se ha ingresado correctamente");
 
-                    System.out.println(usuarioActual);
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
+                Parent root1 = loader.load();
+                Principal controlador = loader.getController();
+                Scene scene1 = new Scene(root1);
+                Stage stage = new Stage();
+                stage.setScene(scene1);
+                stage.show();
 
 
+                stage.setOnCloseRequest(e -> {
+                    try {
+                        controlador.closeWindows();
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                });
 
+
+                Stage myStage = (Stage) this.btnIniciar.getScene().getWindow();
+                myStage.close();
+
+
+                alert.showAndWait();
+
+                System.out.println(usuarioActual);
             }else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);

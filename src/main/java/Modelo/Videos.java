@@ -1,5 +1,7 @@
 package Modelo;
 
+import java.util.Objects;
+
 /**
  * @author Esteban Barrera
  */
@@ -10,6 +12,7 @@ public class Videos {
     private String categoria;
 
     private String descripcion;
+
 
     private String fechaSubido;
 

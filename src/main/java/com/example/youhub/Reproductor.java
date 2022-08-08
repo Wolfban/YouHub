@@ -115,7 +115,6 @@ public class Reproductor implements Initializable {
     private ImageView Reiniciar;
 
 
-
     @FXML
     private Button btnElegirVid;
 
@@ -162,46 +161,45 @@ public class Reproductor implements Initializable {
             Media vid = new Media(lgar);
             Video = new MediaPlayer(vid);
             Vid.setMediaPlayer(Video);
-
             Video.play();
         }
 
-        Image imgCorazon = new Image(new File("src/main/resources/Like.png ").toURI().toString());
+        Image imgCorazon = new Image(new File("src/main/resources/com/example/youhub/Like.png ").toURI().toString());
         Like = new ImageView(imgCorazon);
         Like.setFitWidth(Tamanio);
         Like.setFitHeight(Tamanio);
 
-        Image imgPlay = new Image(new File("src/main/resources/play.png ").toURI().toString());
+        Image imgPlay = new Image(new File("src/main/resources/com/example/youhub/play.png ").toURI().toString());
         Play = new ImageView(imgPlay);
         Play.setFitHeight(Tamanio);
         Play.setFitWidth(Tamanio);
 
-        Image imgPausa = new Image(new File("src/main/resources/pause.png ").toURI().toString());
+        Image imgPausa = new Image(new File("src/main/resources/com/example/youhub/pause.png ").toURI().toString());
         Parar = new ImageView(imgPausa);
         Parar.setFitHeight(Tamanio);
         Parar.setFitWidth(Tamanio);
 
-        Image imgfullscreen = new Image(new File("src/main/resources/fullscreen.png ").toURI().toString());
+        Image imgfullscreen = new Image(new File("src/main/resources/com/example/youhub/fullscreen.png ").toURI().toString());
         FullScreen = new ImageView(imgfullscreen);
         FullScreen.setFitHeight(Tamanio);
         FullScreen.setFitWidth(Tamanio);
 
-        Image imgreinicio = new Image(new File("src/main/resources/restart.png ").toURI().toString());
+        Image imgreinicio = new Image(new File("src/main/resources/com/example/youhub/restart.png ").toURI().toString());
         Reiniciar = new ImageView(imgreinicio);
         Reiniciar.setFitHeight(Tamanio);
         Reiniciar.setFitWidth(Tamanio);
 
-        Image Volu = new Image(new File("src/main/resources/volume.png ").toURI().toString());
+        Image Volu = new Image(new File("src/main/resources/com/example/youhub/volume.png ").toURI().toString());
         imgVolumen = new ImageView(Volu);
         imgVolumen.setFitHeight(Tamanio);
         imgVolumen.setFitWidth(Tamanio);
 
-        Image imgSilence = new Image(new File("src/main/resources/mute.png ").toURI().toString());
+        Image imgSilence = new Image(new File("src/main/resources/com/example/youhub/mute.png ").toURI().toString());
         Silenciar = new ImageView(imgSilence);
         Silenciar.setFitHeight(Tamanio);
         Silenciar.setFitWidth(Tamanio);
 
-        Image imgSalir = new Image(new File("src/main/resources/exit.png ").toURI().toString());
+        Image imgSalir = new Image(new File("src/main/resources/com/example/youhub/exit.png ").toURI().toString());
         Salir = new ImageView(imgSalir);
         Salir.setFitHeight(Tamanio);
         Salir.setFitWidth(Tamanio);
@@ -374,12 +372,12 @@ public class Reproductor implements Initializable {
         Video.setOnEndOfMedia(new Runnable() {
             @Override
             public void run() {
-            btnPlayStop.setGraphic(Reiniciar);
-            FindelVid = true;
-            if (!TiempoVid.textProperty().equals(TiempoTotal.textProperty())){
-                TiempoVid.textProperty().unbind();
-                TiempoVid.setText(tenerTiempo(Video.getTotalDuration())+ " / ");
-            }
+                btnPlayStop.setGraphic(Reiniciar);
+                FindelVid = true;
+                if (!TiempoVid.textProperty().equals(TiempoTotal.textProperty())){
+                    TiempoVid.textProperty().unbind();
+                    TiempoVid.setText(tenerTiempo(Video.getTotalDuration())+ " / ");
+                }
             }
         });
     }
@@ -426,7 +424,7 @@ public class Reproductor implements Initializable {
     }
 
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();
@@ -436,6 +434,7 @@ public class Reproductor implements Initializable {
 
         stage.setScene(scene);
         stage.show();
+
 
     }
 }
