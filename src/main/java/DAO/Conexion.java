@@ -25,7 +25,8 @@ public class Conexion {
     }
 
     /**Esta función aprovecha la instancia generada por la función anterior para abrir una conexión entre la aplicación y la base de datos
-     *@author Ignacio Josue Zelada ARaya
+     * Se deben cambiar los parámetros url, user y password de acuerdo a los datos correspondientes para que la aplicación funcione
+     *@author Ignacio Josue Zelada Araya
 
      * @return La conexión creada para enviar y recibir datos entre la aplicación y la base de datos
      * @throws SQLException
