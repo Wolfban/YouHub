@@ -49,7 +49,6 @@ public class CrearVideo implements Initializable {
         public void initialize(URL url, ResourceBundle resourceBundle) {
                 apuntaFechas();
         }
-
         @FXML
         void subirVideo(ActionEvent event) throws SQLException {
                 String nombre = this.txtNombre.getText();
@@ -98,7 +97,9 @@ public class CrearVideo implements Initializable {
                 }
         }
 
-
+        /**Función que abre una ventana de explorar archivos, que permite al Usuario subir un video de su elección
+         * @author Ignacio Josué Zelada Araya
+         */
 
         public void buscarVideo(){
                 FileChooser fileChooser = new FileChooser();
@@ -117,6 +118,9 @@ public class CrearVideo implements Initializable {
                 }
         }
 
+        /**Función que se encarga de resetear la fecha que viene for default y la cambia por la fecha actual de el sistema
+         * @author Ignacio Josué Zelada Araya
+         */
         public void apuntaFechas (){
                 DateTimeFormatter formateador = DateTimeFormatter.ofPattern("yyyy/MM/dd");
                 LocalDate fechaActual = LocalDate.now();
