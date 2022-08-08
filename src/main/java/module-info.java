@@ -15,7 +15,4 @@ module com.example.youhub {
 
     opens com.example.youhub to javafx.fxml;
     exports com.example.youhub;
-
-    opens Modelo to javafx.base;
-    exports Modelo;
 }

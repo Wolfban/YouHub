@@ -4,10 +4,7 @@ import Modelo.Videos;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DAOVideo {
     public int agregarVideo(Videos v) throws SQLException {
@@ -26,6 +23,7 @@ public class DAOVideo {
             }
         }
     }
+
 
     public List<Videos> listarVideos() throws SQLException{
 
@@ -49,4 +47,5 @@ public class DAOVideo {
             return lista;
         }
     }
+
 }
