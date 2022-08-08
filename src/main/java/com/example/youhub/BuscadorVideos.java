@@ -8,10 +8,13 @@ import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -50,7 +53,6 @@ public class BuscadorVideos implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         try {
             listaVideos.addAll(daoVideo.listarVideos());
-
             nombreVideo.setCellValueFactory(new PropertyValueFactory<>("nombre"));
             categoriaVideo.setCellValueFactory(new PropertyValueFactory<>("categoria"));
             descripcionVideo.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
