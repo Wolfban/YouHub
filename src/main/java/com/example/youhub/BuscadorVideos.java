@@ -52,6 +52,7 @@ public class BuscadorVideos implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         try {
             listaVideos.addAll(daoVideo.listarVideos());
+
             nombreVideo.setCellValueFactory(new PropertyValueFactory<>("nombre"));
             categoriaVideo.setCellValueFactory(new PropertyValueFactory<>("categoria"));
             descripcionVideo.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
