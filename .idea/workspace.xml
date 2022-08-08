@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
 
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se empieza con el DAO del Log In">
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se unen las paginas una con la otra">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/register.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register.png" afterDir="false" />
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +29,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-
     <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
@@ -54,23 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/src/main/resources/com/example/youhub&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/igna8/Documents/Cenfotec/2 Cuatri/P.O.O/YouHub/src/main/resources/com/example/youhub&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/src/main/resources/com/example/youhub",
+    "last_opened_file_path": "C:/Users/igna8/Documents/Cenfotec/2 Cuatri/P.O.O/YouHub/src/main/resources/com/example/youhub",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.youhub" />
@@ -99,7 +95,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.youhub.HelloApplication" />
         <item itemvalue="Application.com.example.youhub.HelloApplication" />
       </list>
     </recent_temporary>
@@ -291,13 +286,10 @@
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
 
-    <MESSAGE value="Se completa el fxml" />
-    <MESSAGE value="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos." />
-    <MESSAGE value="Se modifica el module info para que acceda al modelo de videos" />
-    <MESSAGE value="Se hace funcion para le search bar y la tbvala de los videos" />
-    <MESSAGE value="Se termina el searchbar" />
-    <MESSAGE value="Ultimo commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ultimo commit" />
+    <MESSAGE value="Se agrega las imagenes del logo a las paginas FXML Principal, Login, Registrar tambien se le pone color a todas las paginas FXML" />
+    <MESSAGE value="Se unen las paginas una con la otra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se unen las paginas una con la otra" />
+
 
   </component>
 </project>
