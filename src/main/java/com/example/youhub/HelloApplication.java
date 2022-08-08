@@ -16,9 +16,7 @@ public class HelloApplication extends Application {
         try {
 
             FXMLLoader loader = new FXMLLoader();
-
-            loader.setLocation(HelloApplication.class.getResource("BuscadorVideos.fxml"));
-
+            loader.setLocation(HelloApplication.class.getResource("Reproductor.fxml"));
 
 
             Pane ventana = (Pane) loader.load();
