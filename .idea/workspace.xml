@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se empieza con el DAO del Log In">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,11 +24,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+
     <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
@@ -50,6 +54,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -63,6 +68,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+
   }
 }</component>
   <component name="RecentsManager">
@@ -73,6 +79,7 @@
       <recent name="C:\Users\igna8\Documents\Cenfotec\2 Cuatri\P.O.O\YouHub\src\main\resources\com\example\youhub" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ExtremeTech\Desktop\Tarea\tarea\YouHub\src\main\resources" />
       <recent name="C:\Users\ExtremeTech\Desktop\Tarea\tarea\YouHub\src\main\resources\com\example\youhub" />
     </key>
   </component>
@@ -112,6 +119,7 @@
       <workItem from="1659399318682" duration="1110000" />
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
+
     </task>
     <task id="LOCAL-00001" summary="Se agregan 2 FXML y el reproductor se enlaza con su fxml correspondiente">
       <created>1659101486586</created>
@@ -197,6 +205,7 @@
       <option name="project" value="LOCAL" />
       <updated>1659776708191</updated>
     </task>
+
     <task id="LOCAL-00013" summary="Se completa el fxml">
       <created>1659918423850</created>
       <option name="number" value="00013" />
@@ -225,28 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1659921386756</updated>
     </task>
-    <task id="LOCAL-00017" summary="Se termina el searchbar">
-      <created>1659925533578</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+
+    <task id="LOCAL-00014" summary="Se unen las paginas una con la otra">
+      <created>1659925563688</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1659925533580</updated>
+      <updated>1659925563688</updated>
     </task>
-    <task id="LOCAL-00018" summary="Ultimo commit">
-      <created>1659925807341</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1659925807342</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Ultimo commit">
-      <created>1659926157510</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1659926157510</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +290,7 @@
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
+
     <MESSAGE value="Se completa el fxml" />
     <MESSAGE value="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos." />
     <MESSAGE value="Se modifica el module info para que acceda al modelo de videos" />
@@ -301,5 +298,6 @@
     <MESSAGE value="Se termina el searchbar" />
     <MESSAGE value="Ultimo commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Ultimo commit" />
+
   </component>
 </project>
