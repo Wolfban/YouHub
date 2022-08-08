@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Recomponinedo el branch master con el de searchbar">
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -76,9 +73,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.youhub" />
@@ -104,6 +100,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.example.youhub.HelloApplication" />
+        <item itemvalue="Application.com.example.youhub.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +120,6 @@
       <workItem from="1659425028402" duration="11261000" />
       <workItem from="1659570106128" duration="38846000" />
       <workItem from="1659785741302" duration="39695000" />
-
     </task>
     <task id="LOCAL-00006" summary="Se arreglaron los bugs del reproductor y se arreglo los timings para que concuerden con el timer del Video">
       <created>1659506843083</created>
@@ -362,7 +358,6 @@
       <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
       <updated>1659808271540</updated>
-
     </task>
     <task id="LOCAL-00040" summary="Se asigna la funcion para subir un video a su boton respectivo">
       <created>1659808397024</created>
@@ -441,7 +436,6 @@
       <option name="project" value="LOCAL" />
       <updated>1659821730916</updated>
     </task>
-
     <task id="LOCAL-00051" summary="Se crea una funcion de validacion de usuarios, para evitar repeticiones a la hora de registrarse">
       <created>1659892232279</created>
       <option name="number" value="00051" />
@@ -463,7 +457,6 @@
       <option name="project" value="LOCAL" />
       <updated>1659900992051</updated>
     </task>
-
     <task id="LOCAL-00054" summary="Recomponinedo el branch master con el de searchbar">
       <created>1659930704209</created>
       <option name="number" value="00054" />
@@ -472,7 +465,6 @@
       <updated>1659930704210</updated>
     </task>
     <option name="localTasksCounter" value="55" />
-
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,9 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-
-    <MESSAGE value="Se crea el asocie para agregar un usuario a la tabla" />
-
     <MESSAGE value="Se cambia el atributo conexion de protected a private" />
     <MESSAGE value="Se crea la funcion para annadir un usuario a la tabla" />
     <MESSAGE value="Se annade una libreria para la base dato (.jar)" />
@@ -524,25 +513,7 @@
     <MESSAGE value="Se crea una funcion de validacion de usuarios, para evitar repeticiones a la hora de registrarse" />
     <MESSAGE value="Se pone solo una sobrecarga del constructuor del modelo del usuario" />
     <MESSAGE value="Se empieza con el DAO del Log In" />
-
     <MESSAGE value="Recomponinedo el branch master con el de searchbar" />
     <option name="LAST_COMMIT_MESSAGE" value="Recomponinedo el branch master con el de searchbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se empieza con el DAO del Log In" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java</url>
-          <line>409</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DAO/DAOLogIn.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
