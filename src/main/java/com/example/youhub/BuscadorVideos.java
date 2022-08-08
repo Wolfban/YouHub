@@ -4,6 +4,8 @@ import DAO.DAOVideo;
 import Modelo.Videos;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
@@ -56,6 +58,34 @@ public class BuscadorVideos implements Initializable {
             ubicacionVideo.setCellValueFactory(new PropertyValueFactory<>("ubicacionLocal"));
 
             tablaVideos.setItems(listaVideos);
+
+            FilteredList<Videos> filtroData = new FilteredList<>(listaVideos, b -> true);
+
+            searchBar.textProperty().addListener((observable, oldValue, newvalue)->{
+                filtroData.setPredicate(Videos ->{
+                    if(newvalue.isEmpty() || newvalue.isBlank() || newvalue == null){
+                        return true;
+                    }
+
+                    String palabraClave = newvalue.toLowerCase();
+
+                    if(Videos.getNombre().toLowerCase().indexOf(palabraClave) > -1){
+                        return true;
+                    }else if (Videos.getCategoria().toLowerCase().indexOf(palabraClave) > -1){
+                        return true;
+                    }else if(Videos.getFechaSubido().toLowerCase().indexOf(palabraClave) > -1){
+                        return true;
+                    } else
+                        return false;
+
+                });
+            });
+
+            SortedList<Videos> listaModificada = new SortedList<>(filtroData);
+
+            listaModificada.comparatorProperty().bind(tablaVideos.comparatorProperty());
+
+            tablaVideos.setItems(listaModificada);
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
