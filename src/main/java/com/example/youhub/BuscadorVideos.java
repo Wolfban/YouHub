@@ -48,7 +48,6 @@ public class BuscadorVideos implements Initializable {
 
     ObservableList<Videos> listaVideos = FXCollections.observableArrayList();
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
