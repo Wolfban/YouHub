@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se hace funcion para le search bar y la tbvala de los videos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BuscadorVideos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BuscadorVideos.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Ultimo commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659921386756</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Se termina el searchbar">
+      <created>1659925533578</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659925533580</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Ultimo commit">
+      <created>1659925807341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659925807342</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +275,9 @@
     <MESSAGE value="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos." />
     <MESSAGE value="Se modifica el module info para que acceda al modelo de videos" />
     <MESSAGE value="Se hace funcion para le search bar y la tbvala de los videos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se hace funcion para le search bar y la tbvala de los videos" />
+    <MESSAGE value="Se termina el searchbar" />
+    <MESSAGE value="Ultimo commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ultimo commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
