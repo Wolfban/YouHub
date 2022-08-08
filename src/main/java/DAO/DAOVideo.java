@@ -29,6 +29,7 @@ public class DAOVideo {
     }
 
     public List<Videos> listarVideos() throws SQLException{
+
         Conexion conexion = Conexion.getInstance();
         List<Videos> lista = null;
         String traerVideos = "SELECT * FROM video";
