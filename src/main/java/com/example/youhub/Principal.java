@@ -40,40 +40,11 @@ public class Principal {
     void Click(ActionEvent event) {
 
     }
+
     @FXML
     void click(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("BuscadorVideos.fxml"));
 
-
-        Parent root = loader.load();
-
-
-        Login controlador = loader.getController();
-
-
-        Scene scene1 = new Scene(root);
-        Stage stage = new Stage();
-
-
-        stage.setScene(scene1);
-        stage.show();
-
-
-        stage.setOnCloseRequest(e -> {
-            try {
-                controlador.closeWindows();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-
-        Stage myStage = (Stage) this.btnBuscarVid.getScene().getWindow();
-        myStage.close();
     }
-
-    @FXML
-
     private String lgar;
 
     public void closeWindows() throws IOException {
