@@ -6,6 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -29,6 +30,13 @@ import java.util.ResourceBundle;
 public class BuscadorVideos implements Initializable {
 
     DAOVideo daoVideo= new DAOVideo();
+
+
+    @FXML
+    private Button btnRegistrarVid;
+
+    @FXML
+    private Button btnReproducirVid;
 
     @FXML
     private TextField searchBar;
@@ -98,6 +106,72 @@ public class BuscadorVideos implements Initializable {
             throw new RuntimeException(e);
         }
     }
+
+
+    @FXML
+    void Click(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor.fxml"));
+
+
+        Parent root = loader.load();
+
+
+        Reproductor controlador = loader.getController();
+
+
+        Scene scene2 = new Scene(root);
+        Stage stage = new Stage();
+
+
+        stage.setScene(scene2);
+        stage.show();
+
+
+        stage.setOnCloseRequest(e -> {
+            try {
+                controlador.closeWindows();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+
+        Stage myStage = (Stage) this.btnReproducirVid.getScene().getWindow();
+        myStage.close();
+    }
+
+    @FXML
+    void click(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CrearVideo.fxml"));
+
+
+        Parent root3 = loader.load();
+
+
+        CrearVideo controlador = loader.getController();
+
+
+        Scene scene1 = new Scene(root3);
+        Stage stage = new Stage();
+
+
+        stage.setScene(scene1);
+        stage.show();
+
+
+        stage.setOnCloseRequest(e -> {
+            try {
+                controlador.closeWindows();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+
+        Stage myStage = (Stage) this.btnRegistrarVid.getScene().getWindow();
+        myStage.close();
+    }
+
 
     public void closeWindows() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));

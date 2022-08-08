@@ -4,11 +4,16 @@ import DAO.*;
 import Modelo.Videos;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -128,4 +133,16 @@ public class CrearVideo implements Initializable {
         }
 
 
+    public void closeWindows() throws IOException {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
+
+            Parent root = loader.load();
+            Object controlador = loader.getController();
+
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+
+            stage.setScene(scene);
+            stage.show();
+    }
 }
