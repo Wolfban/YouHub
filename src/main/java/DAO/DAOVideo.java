@@ -12,7 +12,6 @@ import java.util.List;
 public class DAOVideo {
     public int agregarVideo(Videos v) throws SQLException {
         Conexion conexion = Conexion.getInstance();
-
         String insertVideo = "INSERT INTO video(nombre, categoria, descripcion, fechasubido, ubicacionlocal) VALUES (?, ?, ?, ?, ?)";
 
         try(Connection conexionBase = conexion.openConnection()){

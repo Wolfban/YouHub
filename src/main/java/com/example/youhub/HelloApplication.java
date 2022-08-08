@@ -16,7 +16,6 @@ public class HelloApplication extends Application {
         try {
 
             FXMLLoader loader = new FXMLLoader();
-
             loader.setLocation(HelloApplication.class.getResource("BuscadorVideos.fxml"));
 
 

@@ -46,7 +46,6 @@ public class BuscadorVideos implements Initializable {
     @FXML
     private TableColumn<Videos, String> ubicacionVideo;
 
-
     ObservableList<Videos> listaVideos = FXCollections.observableArrayList();
 
     @Override
