@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se completa el fxml">
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BuscadorVideos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BuscadorVideos.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659918423850</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos.">
+      <created>1659918742390</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659918742390</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +249,8 @@
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
     <MESSAGE value="Se completa el fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se completa el fxml" />
+    <MESSAGE value="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea la funcion del DAO para generar la lista.&#10;Se geenra una sobrecarga al constructor d elos videos." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
