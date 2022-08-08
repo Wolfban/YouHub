@@ -9,10 +9,15 @@ import DAO.*;
 import Modelo.Usuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class Login {
@@ -60,6 +65,8 @@ public class Login {
 
                     System.out.println(usuarioActual);
 
+
+
             }else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setHeaderText(null);
@@ -77,8 +84,49 @@ public class Login {
     }
 
     @FXML
-    void click(ActionEvent event) {
+    void click(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Register.fxml"));
 
+
+        Parent root = loader.load();
+
+
+        Register controlador = loader.getController();
+
+
+        Scene scene1 = new Scene(root);
+        Stage stage = new Stage();
+
+
+        stage.setScene(scene1);
+        stage.show();
+
+
+        stage.setOnCloseRequest(e -> {
+            try {
+                controlador.closeWindows();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+
+        Stage myStage = (Stage) this.btnRegistrarse.getScene().getWindow();
+        myStage.close();
     }
 
+    public void closeWindows() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+
+        Parent root = loader.load();
+        Object controlador = loader.getController();
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+
+        stage.setScene(scene);
+        stage.show();
+
+
+    }
 }

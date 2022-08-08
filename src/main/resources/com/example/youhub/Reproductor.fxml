@@ -9,7 +9,7 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vbox" alignment="CENTER" prefHeight="549.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Reproductor">
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="549.0" prefWidth="641.0" style="-fx-background-color: #FFE3B3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Reproductor">
    <children>
       <MediaView fx:id="Vid" />
       <Slider fx:id="VidDuracion">
@@ -19,7 +19,7 @@
       </Slider>
       <HBox fx:id="Hbox" alignment="CENTER_LEFT">
          <children>
-            <Button fx:id="btnPlayStop" mnemonicParsing="false" onAction="#Click" style="-fx-cursor: hand;">
+            <Button fx:id="btnPlayStop" mnemonicParsing="false" onAction="#Click" style="-fx-cursor: hand; -fx-background-color: #26798E;">
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
@@ -53,12 +53,12 @@
                   <Font name="Microsoft YaHei" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="btnMeGusta" minWidth="48.0" mnemonicParsing="false" onAction="#click" prefHeight="41.0" prefWidth="48.0" style="-fx-cursor: hand;">
+            <Button fx:id="btnMeGusta" minWidth="48.0" mnemonicParsing="false" onAction="#click" prefHeight="41.0" prefWidth="48.0" style="-fx-cursor: hand; -fx-background-color: #26798E;">
                <padding>
                   <Insets right="5.0" />
                </padding>
             </Button>
-            <Button fx:id="btnLista" minWidth="52.0" mnemonicParsing="false" onAction="#CLick" prefHeight="41.0" prefWidth="58.0" style="-fx-cursor: hand;" text="Lista ">
+            <Button fx:id="btnLista" minWidth="52.0" mnemonicParsing="false" onAction="#CLick" prefHeight="41.0" prefWidth="58.0" style="-fx-cursor: hand; -fx-background-color: #26798E;" text="Lista ">
                <padding>
                   <Insets left="5.0" />
                </padding></Button>
