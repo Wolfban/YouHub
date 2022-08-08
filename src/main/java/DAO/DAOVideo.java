@@ -39,8 +39,14 @@ public class DAOVideo {
             ResultSet rs = st.executeQuery();
             while(rs.next()){
                 Videos vid = new Videos();
-                vid.setNombre();
+                vid.setNombre(rs.getString("nombre"));
+                vid.setCategoria(rs.getString("categoria"));
+                vid.setDescripcion(rs.getString("descripcion"));
+                vid.setFechaSubido(rs.getString("fechasubido"));
+                vid.setUbicacionLocal(rs.getString("ubicacionlocal"));
+                lista.add(vid);
             }
+            return lista;
         }
     }
 }

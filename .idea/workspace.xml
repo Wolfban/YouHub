@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se crea la funciopn del Log In en el DAO y se implementa en el controlador">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/BuscadorVideos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b26b2196-20e7-4b58-8d54-af8155042869" name="Changes" comment="Se completa el fxml">
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/Videos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659776708191</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Se completa el fxml">
+      <created>1659918423850</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659918423850</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +239,8 @@
     <MESSAGE value="Se crean los modelos de los usuarios y los videos para agregarlos y buscarlos. Asi mismo el Almacenamiento" />
     <MESSAGE value="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal" />
     <MESSAGE value="Commit and push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit and push" />
+    <MESSAGE value="Se completa el fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se completa el fxml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
