@@ -41,6 +41,10 @@ public class Principal {
 
     }
     @FXML
+    /**Función encargada de redirigir al usuario al buscador de videos
+     * @author Esteban Alonso Barrera Araya
+     * @throws IOException error de excepción
+     */
     void click(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("BuscadorVideos.fxml"));
 
@@ -73,7 +77,12 @@ public class Principal {
     }
 
 
-
+    /**Función que se encarga de redigir el usuario a la página de login al cerrar la ventana
+     *
+     * @author Esteban Alonso Barrera Araya
+     *
+     * @throws IOException Error de exepción
+     */
     public void closeWindows() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
 
