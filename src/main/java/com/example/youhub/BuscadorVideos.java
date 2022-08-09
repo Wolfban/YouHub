@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -61,6 +62,8 @@ public class BuscadorVideos implements Initializable {
 
     ObservableList<Videos> listaVideos = FXCollections.observableArrayList();
 
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
@@ -107,37 +110,23 @@ public class BuscadorVideos implements Initializable {
         }
     }
 
-
     @FXML
     void Click(ActionEvent event) throws IOException {
+        ObservableList<Videos> Seleccion;
+        Seleccion = tablaVideos.getSelectionModel().getSelectedItems();
+        String Lugar = Seleccion.get(0).getUbicacionLocal();
+        Reproductor.setLugar(Lugar);
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor.fxml"));
 
-
         Parent root = loader.load();
+        Object controlador = loader.getController();
 
-
-        Reproductor controlador = loader.getController();
-
-
-        Scene scene2 = new Scene(root);
+        Scene scene = new Scene(root);
         Stage stage = new Stage();
 
-
-        stage.setScene(scene2);
+        stage.setScene(scene);
         stage.show();
 
-
-        stage.setOnCloseRequest(e -> {
-            try {
-                controlador.closeWindows();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-
-        Stage myStage = (Stage) this.btnReproducirVid.getScene().getWindow();
-        myStage.close();
     }
 
     @FXML

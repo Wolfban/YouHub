@@ -1,10 +1,12 @@
 package com.example.youhub;
 
+import Modelo.Videos;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -88,6 +90,9 @@ public class Reproductor implements Initializable {
     private VBox vbox;
     @FXML
     private Button btnLista;
+
+
+
     @FXML
     void CLick(ActionEvent event) {
 
@@ -121,48 +126,29 @@ public class Reproductor implements Initializable {
 
 
     @FXML
-    void Click(ActionEvent event) throws IOException {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor.fxml"));
-        Parent root = loader.load();
-        Principal controlador = loader.getController();
-        Scene scene1 = new Scene(root);
-        Stage stage = new Stage();
-        stage.setScene(scene1);
-        stage.show();
+    void Click(ActionEvent event)  {
 
 
-        stage.setOnCloseRequest(e -> {
-            try {
-                controlador.closeWindows();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-
-        Stage myStage = (Stage) this.btnElegirVid.getScene().getWindow();
-        myStage.close();
     }
 
-    private String lgar;
 
 
+    private static String Lugar;
 
+    public static void setLugar(String lugar) {
+        Lugar = lugar;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         final int Tamanio = 25;
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Buscar Video");
-        File File = fileChooser.showOpenDialog(null);
-        lgar = File.toURI().toString();
-        if (lgar != null) {
-            Media vid = new Media(lgar);
-            Video = new MediaPlayer(vid);
-            Vid.setMediaPlayer(Video);
-            Video.play();
-        }
+
+        mediaVid = new Media(new File(Lugar).toURI().toString());
+        Video = new MediaPlayer(mediaVid);
+        Vid.setMediaPlayer(Video);
+
+
 
         Image imgCorazon = new Image(new File("src/main/resources/com/example/youhub/Like.png ").toURI().toString());
         Like = new ImageView(imgCorazon);
@@ -424,7 +410,7 @@ public class Reproductor implements Initializable {
     }
 
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();
