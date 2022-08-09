@@ -14,9 +14,9 @@
       <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="163.0" prefWidth="610.0" style="-fx-background-color: #26798E;">
          <children>
             <Label layoutX="196.0" layoutY="53.0" prefHeight="57.0" prefWidth="207.0" text="Reproducción más reciente" />
-            <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="480.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="473.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Logo.png" />
+                  <Image url="@Logo.png" />
                </image>
             </ImageView>
          </children>

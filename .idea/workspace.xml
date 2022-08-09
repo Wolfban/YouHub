@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
-
-    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Documentación extra en Conexion.java en el método openConnection()">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-
-
-        <entry key="$PROJECT_DIR$" value="dox" />
-
+        <entry key="$PROJECT_DIR$" value="Searchbar" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="master" />
@@ -70,7 +58,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -125,25 +112,11 @@
       <list>
         <item itemvalue="Application.com.example.youhub.HelloApplication" />
         <item itemvalue="Application.com.example.youhub.HelloApplication" />
+        <item itemvalue="Application.com.example.youhub.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
-  }
-}]]></component>
-
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="Se aplica la jbdb" />
@@ -434,7 +407,6 @@
       <option name="project" value="LOCAL" />
       <updated>1659821248850</updated>
     </task>
-
     <task id="LOCAL-00050" summary="Se decide crear un nuevo proceso para el log in">
       <created>1659821730912</created>
       <option name="number" value="00050" />
@@ -506,23 +478,6 @@
       <updated>1660001216426</updated>
     </task>
     <option name="localTasksCounter" value="60" />
-
-    <task id="LOCAL-00003" summary="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml">
-      <created>1659945415879</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659945415879</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Documentación extra en Conexion.java en el método openConnection()">
-      <created>1659977245267</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659977245267</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
-
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-
     <MESSAGE value="Se creacion del modelo del video" />
     <MESSAGE value="Creacion del DAO para el video" />
     <MESSAGE value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
@@ -604,12 +558,5 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-
-    <MESSAGE value="Documentación de Conexion.java agregada" />
-    <MESSAGE value="Documentación de Conexion.java, DAOLogIn.java, DAOUsuario.javay DAOVideo.java agregada" />
-    <MESSAGE value="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml" />
-    <MESSAGE value="Documentación extra en Conexion.java en el método openConnection()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentación extra en Conexion.java en el método openConnection()" />
-
   </component>
 </project>
