@@ -63,7 +63,11 @@ public class BuscadorVideos implements Initializable {
     ObservableList<Videos> listaVideos = FXCollections.observableArrayList();
 
 
-
+    /**Esta función se encarga de inicializar la pantalla del buscador de videos, además de listar los vídeos presentes en la base de datos
+     *
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
@@ -111,6 +115,10 @@ public class BuscadorVideos implements Initializable {
     }
 
     @FXML
+    /**Esta función se encarga de reproducir el video seleccionado por el usuario, y abrirlo en el reproductor de la aplicación
+     *
+     * @author Esteban Alonso Barrera Araya
+     */
     void Click(ActionEvent event) throws IOException {
         ObservableList<Videos> Seleccion;
         Seleccion = tablaVideos.getSelectionModel().getSelectedItems();
@@ -130,6 +138,10 @@ public class BuscadorVideos implements Initializable {
     }
 
     @FXML
+    /**Esta función permite al usuario acceder la ventana de agregar un nuevo video a la base de datos para ser reproducido
+     *
+     * @author Esteban Alonso Barrera Araya
+     */
     void click(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("CrearVideo.fxml"));
 
@@ -161,7 +173,11 @@ public class BuscadorVideos implements Initializable {
         myStage.close();
     }
 
-
+    /**Esta función vuelve al menú principal al cerrar la ventana
+     * @author Esteban Alonso Barrera Araya
+     *
+     * @throws IOException Error de excepción
+     */
     public void closeWindows() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
 
