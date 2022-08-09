@@ -37,6 +37,11 @@ public class Login {
     private TextField txtEmail;
 
     @FXML
+    /**Esta función se encarga de ayudar al usuario ingresar al sistema con su cuenta registrada en la base de datos
+     *
+     * @author Ignacio Josue Zelada Araya
+     *
+     */
     void loginUsuario(ActionEvent event) throws SQLException, IOException {
         Parent root = null;
         String correo = this.txtEmail.getText();
@@ -105,6 +110,9 @@ public class Login {
     }
 
     @FXML
+    /** Esta función brinda al usuario a la página de registrarse para tener datos para utilizar en la sección de login
+     * @author Esteban Alonso Barrera Araya
+     */
     void click(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Register.fxml"));
 
@@ -136,6 +144,11 @@ public class Login {
         myStage.close();
     }
 
+    /**Esta función se encarga de volver a la página de login
+     *
+     * @author Esteban Alonso Barrera Araya
+     * @throws IOException Error de excepción
+     */
     public void closeWindows() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
 
