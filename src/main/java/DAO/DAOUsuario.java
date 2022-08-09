@@ -6,7 +6,9 @@ import java.sql.*;
 
 public class DAOUsuario {
     /**Esta función intenta conectarse con la base de datos, además de registrar nuevos datos en la tabla usuarios encontrada en la bases de datos
-     * @author Ignacio Josueé Zelada Araya
+     * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @param u Utiliza el modelo disponible en Usuarios.java para registrar un nuevo usuario a la base de datos
      * @return Actualizar la base de datos con el usuario nuevo
      * @throws SQLException Error de SQL
@@ -28,7 +30,9 @@ public class DAOUsuario {
     }
 
     /** Esta función intenta entrar a la base de datos, además de intentar extraer el correo relacionado con el usuario.
-     *@author Ignacio Josueé Zelada Araya
+     * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @param correo dato STRING que contiene el correo ingresado por el usuario.
      * @return Determinar si el correo existe en la base de datos. True si existe, False si no se encuentra presente.
      * @throws SQLException Error de SQL
@@ -54,7 +58,9 @@ public class DAOUsuario {
     }
 
     /**Funcion que intenta accesar a la base de datos para encontrar si la contrasenña existe en la base de datos.
-     * @author Ignacio Josueé Zelada Araya
+     * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @param contrasenna Contraseña ingresada por el usuario
      * @return Boolean que determina si la contraseña está presente. True para que si existe, False para demostrar que no está.
      * @throws SQLException Error de SQL

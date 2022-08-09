@@ -11,7 +11,9 @@ import java.util.List;
 
 public class DAOVideo {
     /** Esta función intenta accesar a la base de datos, y realiza un try el cuál trabajo es agregar un vídeo con diferentes parámetros a la base de datos ingresados por el Usuario.
-     * @author Ignacio Josueé Zelada Araya
+     * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @param v Toma el modelo de Videos para ordenar las características del vídeo que se desea subir.
      * @return Actualiza la base de datos con el video nuevo
      * @throws SQLException Error de SQL
@@ -36,7 +38,9 @@ public class DAOVideo {
 
     public List<Videos> listarVideos() throws SQLException{
         /**La función realiza una conexión a la base de datos para generar la lista de vídeos disponibles en la base de datos en sí
-         * @author Ignacio Josueé Zelada Araya
+         * @author Ignacio Josué Zelada Araya
+         * @author Esteban Alonso Barrera Araya
+         * @author Isaac Rodolfo Morales Badilla
          */
 
         Conexion conexion = Conexion.getInstance();

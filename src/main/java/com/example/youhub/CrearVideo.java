@@ -104,6 +104,8 @@ public class CrearVideo implements Initializable {
 
         /**Función que abre una ventana de explorar archivos, que permite al Usuario subir un video de su elección
          * @author Ignacio Josué Zelada Araya
+         * @author Esteban Alonso Barrera Araya
+         * @author Isaac Rodolfo Morales Badilla
          */
 
         public void buscarVideo(){
@@ -125,6 +127,8 @@ public class CrearVideo implements Initializable {
 
         /**Función que se encarga de resetear la fecha que viene for default y la cambia por la fecha actual de el sistema
          * @author Ignacio Josué Zelada Araya
+         * @author Esteban Alonso Barrera Araya
+         * @author Isaac Rodolfo Morales Badilla
          */
         public void apuntaFechas (){
                 DateTimeFormatter formateador = DateTimeFormatter.ofPattern("yyyy/MM/dd");

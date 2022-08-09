@@ -10,7 +10,9 @@ public class DAOLogIn {
     /**
      *Esta función intenta conectarse con la base de datos y realiza un query hecho de antemano con dos datos ingresados por el usuario en la aplicación
      *con el propósito de garantizar acceso al servicio.
-     * @author Ignacio Josue Zelada Araya
+     * @author Ignacio Josué Zelada Araya
+     * @author Esteban Alonso Barrera Araya
+     * @author Isaac Rodolfo Morales Badilla
      * @param correo Corresponde al correo ingresado por el usuario
      * @param contrasenna Corresponde a la contrasenña ingresada por el usuario
      * @return Retorna un booleano normalmente False, que vuelve True en dos casos: Si  o si la supuesta contraseña relacionada con el correo insertado no concuerda de acuerdo a la base de datos.
