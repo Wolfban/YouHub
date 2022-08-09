@@ -4,29 +4,132 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscadorVideos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Reproductor.java" afterDir="false" />
+
     <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Documentación extra en Conexion.java en el método openConnection()">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/HelloApplication.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+
+
         <entry key="$PROJECT_DIR$" value="dox" />
+
       </map>
     </option>
+    <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="648e0192-a1a8-47f7-ade7-7fc4f82d6493" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="Wolfban" />
+        <option name="repository" value="YouHub" />
+      </RepoCoordinatesHolder>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CcTakOyqmS9lIc1Xx8uzM00HPB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/ExtremeTech/Desktop/Tarea/tarea/YouHub/src/main/resources/com/example/youhub&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ExtremeTech/Desktop/javafx-graphics-18.0.2-linux.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.youhub" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ExtremeTech\Desktop\Tarea\tarea\YouHub\src\main\resources\com\example\youhub" />
+      <recent name="C:\Users\ExtremeTech\Desktop\Tarea\tarea\YouHub\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="com.example.youhub.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.youhub.HelloApplication" />
+      <module name="YouHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.youhub.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.example.youhub.HelloApplication" />
+        <item itemvalue="Application.com.example.youhub.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -40,21 +143,370 @@
     ]
   }
 }]]></component>
+
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="Documentación de Conexion.java agregada">
-      <created>1659938102560</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659938102560</updated>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="Se aplica la jbdb" />
+      <created>1659100938652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659100938652</updated>
+      <workItem from="1659100940087" duration="302000" />
+      <workItem from="1659101268410" duration="30767000" />
+      <workItem from="1659255216053" duration="596000" />
+      <workItem from="1659335850224" duration="592000" />
+      <workItem from="1659399318682" duration="1110000" />
+      <workItem from="1659425028402" duration="11261000" />
+      <workItem from="1659570106128" duration="38846000" />
+      <workItem from="1659785741302" duration="39695000" />
+      <workItem from="1659993894250" duration="8772000" />
     </task>
-    <task id="LOCAL-00002" summary="Documentación de Conexion.java, DAOLogIn.java, DAOUsuario.javay DAOVideo.java agregada">
-      <created>1659941751093</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00011" summary="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal">
+      <created>1659771823535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1659941751093</updated>
+      <updated>1659771823535</updated>
     </task>
+    <task id="LOCAL-00012" summary="Commit and push">
+      <created>1659776708191</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659776708191</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Se inicia con el proceso de conexion a la base de datos y el del DAO">
+      <created>1659785859057</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659785859057</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Se crean los procesos de conexion a la base de datos">
+      <created>1659786248229</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786248229</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Se crea la interfaz">
+      <created>1659786323538</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786323538</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Se crea la funcion de regsitrar, para registrar un cliente a la tabla">
+      <created>1659786423661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786423661</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Se crea la implementacion para la interfaz del Usuario">
+      <created>1659786488104</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659786488104</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Se hace una correccion a los atributos en el modelo de usuario">
+      <created>1659787418261</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659787418261</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Se crea el proceso para annadir un usuario que se esta registrando en la tabal de usuarios">
+      <created>1659787603335</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659787603335</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Se empieza con la implementacion de la funcion registrar del DAO">
+      <created>1659788172501</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659788172501</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Se corrigen los atributos que se van a recoger del formulario, tanto en el fxml como en el controlador">
+      <created>1659788628926</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659788628926</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Se crea la funcion registrarUsuario usada para verificar si hay errores en los datos ingresados y para ejecutar el registrar de la interfaz">
+      <created>1659789301777</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659789301777</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Se conecta el fxml y controlador del registro de usario">
+      <created>1659789370026</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659789370026</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Se corrige el problema con la interfaz del usuario">
+      <created>1659789925785</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659789925785</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Se hace publico el constructor de Conexion">
+      <created>1659790278170</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1659790278170</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Se corrige la verificacion de las contrasennas y se annade un alert de confirmacion">
+      <created>1659791196309</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1659791196309</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Se decide probar otro metodo para lograr el DAO">
+      <created>1659793631450</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1659793631450</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Se decide probar otro metodo para lograr el DAO">
+      <created>1659793660537</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1659793660537</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Se crea el asocie para agregar un usuario a la tabla">
+      <created>1659797247622</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1659797247622</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Se cambia el atributo conexion de protected a private">
+      <created>1659797694490</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1659797694490</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Se crea la funcion para annadir un usuario a la tabla">
+      <created>1659798305037</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1659798305038</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Se annade una libreria para la base dato (.jar)">
+      <created>1659800370888</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1659800370888</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Se termina el porceso de registro del usuario">
+      <created>1659801032698</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1659801032698</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Se empieza con la construccion del modelo del video y su DAO">
+      <created>1659805021600</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1659805021600</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Se creacion del modelo del video">
+      <created>1659805350682</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1659805350682</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Creacion del DAO para el video">
+      <created>1659805609097</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1659805609097</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video">
+      <created>1659805949398</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1659805949398</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Creacion de la funcion apuntafechas para setear la fecha del video">
+      <created>1659808148828</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1659808148828</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Edicion del formulario para los videos">
+      <created>1659808271540</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1659808271540</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Se asigna la funcion para subir un video a su boton respectivo">
+      <created>1659808397024</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1659808397024</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Se edita el fxml Register y el Controlador del formulario para subir videos">
+      <created>1659809244422</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1659809244422</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Se importa todos los elementos del package DAO">
+      <created>1659809437335</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1659809437335</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Se correge el formato en el mque se recopila la fecha y se annade otro tipo de archivo para subir videos">
+      <created>1659811153378</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1659811153378</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Se corrigen los flitros para buscar archivos">
+      <created>1659814433260</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1659814433260</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Se unen el controlador Login con su fxml">
+      <created>1659818974196</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1659818974196</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Sobrecarga del constructor del modelo Usuarios">
+      <created>1659819167046</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1659819167047</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Se hace la funcion para traer al usuario de la tabla">
+      <created>1659820097663</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1659820097664</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Se crea una sobrecarga en el modelo de Usuarios">
+      <created>1659820476223</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1659820476223</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Se sobrecarga el cosntructor en Usuarios.&#10;Se corrige la funcion que devuelve los datos del usuario de la tabla.&#10;Se crea al objeto usuarioActual en el controlador general.">
+      <created>1659821248850</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1659821248850</updated>
+    </task>
+
+    <task id="LOCAL-00050" summary="Se decide crear un nuevo proceso para el log in">
+      <created>1659821730912</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1659821730916</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Se crea una funcion de validacion de usuarios, para evitar repeticiones a la hora de registrarse">
+      <created>1659892232279</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1659892232279</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Se pone solo una sobrecarga del constructuor del modelo del usuario">
+      <created>1659892995283</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1659892995284</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Se empieza con el DAO del Log In">
+      <created>1659900992051</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1659900992051</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Recomponinedo el branch master con el de searchbar">
+      <created>1659930704209</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1659930704210</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Se crea el fxml del cuscador de videos">
+      <created>1659932438310</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1659932438311</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Se crea funcion de buscar en el DAO.&#10;Se le aplica en el controlador del buscador.&#10;Se genera una sobrecarga en el modelo de videos.">
+      <created>1659932601347</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1659932601347</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Se aplica la jbdb">
+      <created>1659987560873</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1659987560873</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Se enlaza el Login con el Principal y se arreglan errores">
+      <created>1659999906234</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1659999906235</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug">
+      <created>1660001216426</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1660001216426</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
+
     <task id="LOCAL-00003" summary="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml">
       <created>1659945415879</created>
       <option name="number" value="00003" />
@@ -70,24 +522,94 @@
       <updated>1659977245267</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="209" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="136" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+
+    <MESSAGE value="Se creacion del modelo del video" />
+    <MESSAGE value="Creacion del DAO para el video" />
+    <MESSAGE value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
+    <MESSAGE value="Creacion de la funcion apuntafechas para setear la fecha del video" />
+    <MESSAGE value="Edicion del formulario para los videos" />
+    <MESSAGE value="Se asigna la funcion para subir un video a su boton respectivo" />
+    <MESSAGE value="Se edita el fxml Register y el Controlador del formulario para subir videos" />
+    <MESSAGE value="Se importa todos los elementos del package DAO" />
+    <MESSAGE value="Se correge el formato en el mque se recopila la fecha y se annade otro tipo de archivo para subir videos" />
+    <MESSAGE value="Se corrigen los flitros para buscar archivos" />
+    <MESSAGE value="Se unen el controlador Login con su fxml" />
+    <MESSAGE value="Sobrecarga del constructor del modelo Usuarios" />
+    <MESSAGE value="Se hace la funcion para traer al usuario de la tabla" />
+    <MESSAGE value="Se crea una sobrecarga en el modelo de Usuarios" />
+    <MESSAGE value="Se sobrecarga el cosntructor en Usuarios.&#10;Se corrige la funcion que devuelve los datos del usuario de la tabla.&#10;Se crea al objeto usuarioActual en el controlador general." />
+    <MESSAGE value="Se decide crear un nuevo proceso para el log in" />
+    <MESSAGE value="Se crea una funcion de validacion de usuarios, para evitar repeticiones a la hora de registrarse" />
+    <MESSAGE value="Se pone solo una sobrecarga del constructuor del modelo del usuario" />
+    <MESSAGE value="Se empieza con el DAO del Log In" />
+    <MESSAGE value="Recomponinedo el branch master con el de searchbar" />
+    <MESSAGE value="Se crea el fxml del cuscador de videos" />
+    <MESSAGE value="Se crea funcion de buscar en el DAO.&#10;Se le aplica en el controlador del buscador.&#10;Se genera una sobrecarga en el modelo de videos." />
+    <MESSAGE value="Se aplica la jbdb" />
+    <MESSAGE value="Se enlaza el Login con el Principal y se arreglan errores" />
+    <MESSAGE value="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+
     <MESSAGE value="Documentación de Conexion.java agregada" />
     <MESSAGE value="Documentación de Conexion.java, DAOLogIn.java, DAOUsuario.javay DAOVideo.java agregada" />
     <MESSAGE value="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml" />
     <MESSAGE value="Documentación extra en Conexion.java en el método openConnection()" />
     <option name="LAST_COMMIT_MESSAGE" value="Documentación extra en Conexion.java en el método openConnection()" />
+
   </component>
 </project>

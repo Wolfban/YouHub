@@ -1,10 +1,12 @@
 package com.example.youhub;
 
+import Modelo.Videos;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -88,6 +90,9 @@ public class Reproductor implements Initializable {
     private VBox vbox;
     @FXML
     private Button btnLista;
+
+
+
     @FXML
     void CLick(ActionEvent event) {
 
@@ -121,85 +126,66 @@ public class Reproductor implements Initializable {
 
 
     @FXML
-    void Click(ActionEvent event) throws IOException {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Reproductor.fxml"));
-        Parent root = loader.load();
-        Principal controlador = loader.getController();
-        Scene scene1 = new Scene(root);
-        Stage stage = new Stage();
-        stage.setScene(scene1);
-        stage.show();
+    void Click(ActionEvent event)  {
 
 
-        stage.setOnCloseRequest(e -> {
-            try {
-                controlador.closeWindows();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-
-        Stage myStage = (Stage) this.btnElegirVid.getScene().getWindow();
-        myStage.close();
     }
 
-    private String lgar;
 
 
+    private static String Lugar;
 
+    public static void setLugar(String lugar) {
+        Lugar = lugar;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        final int Tamanio = 25;
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Buscar Video");
-        File File = fileChooser.showOpenDialog(null);
-        lgar = File.toURI().toString();
-        if (lgar != null) {
-            Media vid = new Media(lgar);
-            Video = new MediaPlayer(vid);
-            Vid.setMediaPlayer(Video);
-            Video.play();
-        }
 
-        Image imgCorazon = new Image(new File("src/main/resources/Like.png ").toURI().toString());
+        final int Tamanio = 25;
+
+        mediaVid = new Media(new File(Lugar).toURI().toString());
+        Video = new MediaPlayer(mediaVid);
+        Vid.setMediaPlayer(Video);
+
+
+
+        Image imgCorazon = new Image(new File("src/main/resources/com/example/youhub/Like.png ").toURI().toString());
         Like = new ImageView(imgCorazon);
         Like.setFitWidth(Tamanio);
         Like.setFitHeight(Tamanio);
 
-        Image imgPlay = new Image(new File("src/main/resources/play.png ").toURI().toString());
+        Image imgPlay = new Image(new File("src/main/resources/com/example/youhub/play.png ").toURI().toString());
         Play = new ImageView(imgPlay);
         Play.setFitHeight(Tamanio);
         Play.setFitWidth(Tamanio);
 
-        Image imgPausa = new Image(new File("src/main/resources/pause.png ").toURI().toString());
+        Image imgPausa = new Image(new File("src/main/resources/com/example/youhub/pause.png ").toURI().toString());
         Parar = new ImageView(imgPausa);
         Parar.setFitHeight(Tamanio);
         Parar.setFitWidth(Tamanio);
 
-        Image imgfullscreen = new Image(new File("src/main/resources/fullscreen.png ").toURI().toString());
+        Image imgfullscreen = new Image(new File("src/main/resources/com/example/youhub/fullscreen.png ").toURI().toString());
         FullScreen = new ImageView(imgfullscreen);
         FullScreen.setFitHeight(Tamanio);
         FullScreen.setFitWidth(Tamanio);
 
-        Image imgreinicio = new Image(new File("src/main/resources/restart.png ").toURI().toString());
+        Image imgreinicio = new Image(new File("src/main/resources/com/example/youhub/restart.png ").toURI().toString());
         Reiniciar = new ImageView(imgreinicio);
         Reiniciar.setFitHeight(Tamanio);
         Reiniciar.setFitWidth(Tamanio);
 
-        Image Volu = new Image(new File("src/main/resources/volume.png ").toURI().toString());
+        Image Volu = new Image(new File("src/main/resources/com/example/youhub/volume.png ").toURI().toString());
         imgVolumen = new ImageView(Volu);
         imgVolumen.setFitHeight(Tamanio);
         imgVolumen.setFitWidth(Tamanio);
 
-        Image imgSilence = new Image(new File("src/main/resources/mute.png ").toURI().toString());
+        Image imgSilence = new Image(new File("src/main/resources/com/example/youhub/mute.png ").toURI().toString());
         Silenciar = new ImageView(imgSilence);
         Silenciar.setFitHeight(Tamanio);
         Silenciar.setFitWidth(Tamanio);
 
-        Image imgSalir = new Image(new File("src/main/resources/exit.png ").toURI().toString());
+        Image imgSalir = new Image(new File("src/main/resources/com/example/youhub/exit.png ").toURI().toString());
         Salir = new ImageView(imgSalir);
         Salir.setFitHeight(Tamanio);
         Salir.setFitWidth(Tamanio);
@@ -372,12 +358,12 @@ public class Reproductor implements Initializable {
         Video.setOnEndOfMedia(new Runnable() {
             @Override
             public void run() {
-            btnPlayStop.setGraphic(Reiniciar);
-            FindelVid = true;
-            if (!TiempoVid.textProperty().equals(TiempoTotal.textProperty())){
-                TiempoVid.textProperty().unbind();
-                TiempoVid.setText(tenerTiempo(Video.getTotalDuration())+ " / ");
-            }
+                btnPlayStop.setGraphic(Reiniciar);
+                FindelVid = true;
+                if (!TiempoVid.textProperty().equals(TiempoTotal.textProperty())){
+                    TiempoVid.textProperty().unbind();
+                    TiempoVid.setText(tenerTiempo(Video.getTotalDuration())+ " / ");
+                }
             }
         });
     }
@@ -424,7 +410,7 @@ public class Reproductor implements Initializable {
     }
 
     public void closeWindows() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
 
         Parent root = loader.load();
         Object controlador = loader.getController();
