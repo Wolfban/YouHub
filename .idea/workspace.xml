@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOLista.java" afterDir="false" />
+    <list default="true" id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="se crea el DAO de las listas de reproduccion">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/ListaDeReproduccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/ListaDeReproduccion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,13 +131,6 @@
       <workItem from="1659570106128" duration="38846000" />
       <workItem from="1659785741302" duration="39695000" />
       <workItem from="1659993894250" duration="8772000" />
-    </task>
-    <task id="LOCAL-00011" summary="Se cambian los parametros y se ajustan en el Crear Video, se arregla un error del HelloApplication, la Lista de Reproduccion, el Reproductor ya funciona con un video agregado externamente y se cambia de nombre de BusquedadeVideo a Principal">
-      <created>1659771823535</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1659771823535</updated>
     </task>
     <task id="LOCAL-00012" summary="Commit and push">
       <created>1659776708191</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660001216426</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="se crea el DAO de las listas de reproduccion">
+      <created>1661332428498</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1661332428498</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se creacion del modelo del video" />
     <MESSAGE value="Creacion del DAO para el video" />
     <MESSAGE value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
     <MESSAGE value="Creacion de la funcion apuntafechas para setear la fecha del video" />
@@ -551,7 +550,8 @@
     <MESSAGE value="Se aplica la jbdb" />
     <MESSAGE value="Se enlaza el Login con el Principal y se arreglan errores" />
     <MESSAGE value="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug" />
+    <MESSAGE value="se crea el DAO de las listas de reproduccion" />
+    <option name="LAST_COMMIT_MESSAGE" value="se crea el DAO de las listas de reproduccion" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
