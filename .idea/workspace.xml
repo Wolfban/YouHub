@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Se implementa el initializable a la clase Principal">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" afterDir="false" />
+    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Se conectan los espacios del fxml con los atributos de la clase Principal">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661341872172</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se annade en el metodo inicializable la posibilidad de mostrar las listas que se crean">
+      <created>1661342262113</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661342262113</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Se conectan los espacios del fxml con los atributos de la clase Principal">
+      <created>1661342373354</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661342373354</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +135,8 @@
     <MESSAGE value="Documentación extra en Conexion.java en el método openConnection()" />
     <MESSAGE value="Documentación agregada en BuscadorVideos.java y Reproductor.java&#10;&#10;Documentación automática agregada por el sistema en dataSources.xml y workspace.xml" />
     <MESSAGE value="Se implementa el initializable a la clase Principal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementa el initializable a la clase Principal" />
+    <MESSAGE value="Se annade en el metodo inicializable la posibilidad de mostrar las listas que se crean" />
+    <MESSAGE value="Se conectan los espacios del fxml con los atributos de la clase Principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se conectan los espacios del fxml con los atributos de la clase Principal" />
   </component>
 </project>

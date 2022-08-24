@@ -155,7 +155,7 @@ public class Principal implements Initializable {
             listaPlays.addAll(daoLista.listarListas());
 
             nombreListaCol.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-            nombreListaCol.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
+            descripcionListaCol.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
 
             tblListasReproduccion.setItems(listaPlays);
 
