@@ -136,6 +136,12 @@ public class Reproductor implements Initializable {
         Lugar = lugar;
     }
 
+    /**Esta función, como dice el nombre, inicializa el reproductor en sí. Se encuentran todos los elementos importantes para estructurar el reproductor en el FXML
+     *
+     * @author Esteban Alonso Barrera Araya
+     * @param url URL del archivo de video que se desea reproducir
+     * @param resourceBundle utilizado para traducir todo texto presente en el archivo FXML que tenga un %
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -221,7 +227,6 @@ public class Reproductor implements Initializable {
         Video.volumeProperty().bindBidirectional(Volumenn.valueProperty());
 
         TiempoActual();
-
         Volumenn.valueProperty().addListener(new InvalidationListener() {
             @Override
             public void invalidated(Observable observable) {
@@ -342,6 +347,8 @@ public class Reproductor implements Initializable {
                 FinaldelVid(TiempoTotal.getText(), TiempoTotal.getText());
             }
         });
+
+
         Video.currentTimeProperty().addListener(new ChangeListener<Duration>() {
             @Override
             public void changed(ObservableValue<? extends Duration> observableValue, Duration duration, Duration t1) {
@@ -365,6 +372,12 @@ public class Reproductor implements Initializable {
         });
     }
 
+    /**Esta función se encarga de determinar la longitud del video
+     * @author Esteban
+     *
+     * @param Tiempo Duración del video
+     * @return La cantidad de horas, minutos y segundos pasadas a tiempo real
+     */
     public String tenerTiempo(Duration Tiempo) {
         int horas = (int) Tiempo.toHours();
         int minutos = (int) Tiempo.toMinutes();
@@ -378,6 +391,10 @@ public class Reproductor implements Initializable {
 
     }
 
+    /**La funcion se encarga de determinar cuantos segundos, minutos y horas del video han pasado
+     * @author Esteban
+     *
+     */
     public void TiempoActual() {
         TiempoTotal.textProperty().bind(Bindings.createStringBinding(new Callable<String>() {
             @Override
@@ -387,7 +404,12 @@ public class Reproductor implements Initializable {
         }, Video.currentTimeProperty()));
     }
 
-
+    /**
+     * @author Esteban
+     *
+     * @param Tiempo Tiempo actual del video
+     * @param Tiempototal Longitud del video
+     */
     private void FinaldelVid(String Tiempo, String Tiempototal) {
         for (int i = 0; i < Tiempototal.length(); i++) {
             if (Tiempo.charAt(i) != Tiempototal.charAt(i)) {
@@ -406,6 +428,10 @@ public class Reproductor implements Initializable {
 
     }
 
+    /**Función encargada de volver al menú principal
+     * @author Esteban
+     * @throws IOException Error de excepción
+     */
     public void closeWindows() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Principal.fxml"));
 
