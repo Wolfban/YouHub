@@ -36,7 +36,7 @@ public class Conexion {
      */
     public Connection openConnection() throws SQLException {
         closeConnection();
-        this.conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/youhub","root","sqlWolfban16");
+        this.conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/youhub","root","Pokemon.2012");
 
         return this.conexion;
     }

@@ -10,7 +10,10 @@
 
 <AnchorPane prefHeight="608.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.youhub.Principal">
    <children>
-      <AnchorPane layoutX="-1.0" layoutY="155.0" prefHeight="455.0" prefWidth="610.0" style="-fx-background-color: #FFE3B3;" />
+      <AnchorPane layoutX="-1.0" layoutY="155.0" prefHeight="455.0" prefWidth="610.0" style="-fx-background-color: #FFE3B3;">
+         <children>
+            <Button fx:id="btnCrearLista" layoutX="307.0" layoutY="347.0" mnemonicParsing="false" onAction="#CLick" style="-fx-background-color: #26798E;" text="Crear Lista" />
+         </children></AnchorPane>
       <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="163.0" prefWidth="610.0" style="-fx-background-color: #26798E;">
          <children>
             <Label layoutX="276.0" layoutY="53.0" prefHeight="57.0" prefWidth="58.0" text="Listas" />
@@ -22,16 +25,15 @@
          </children>
       </AnchorPane>
       <Label layoutX="40.0" layoutY="14.0" prefHeight="57.0" prefWidth="131.0" text="Bienvenido Usuario" />
-      <TableView fx:id="tblMeGusta" layoutX="105.0" layoutY="325.0" prefHeight="133.0" prefWidth="389.0">
+      <TableView layoutX="105.0" layoutY="325.0" prefHeight="133.0" prefWidth="389.0">
          <columns>
             <TableColumn fx:id="ColuNoimbreGusta" prefWidth="148.6666259765625" text="Nombre" />
             <TableColumn fx:id="ColuCategoria" prefWidth="240.00006103515625" text="Ruta" />
          </columns>
       </TableView>
       <Button fx:id="btnBuscarVid" layoutX="54.0" layoutY="508.0" mnemonicParsing="false" onAction="#click" style="-fx-background-color: #26798E;" text="Buscar Video" />
-      <Button fx:id="btnCrearLista" layoutX="286.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" style="-fx-background-color: #26798E;" text="Crear Lista" />
       <Button fx:id="btnHost" layoutX="467.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" style="-fx-background-color: #26798E;" text="Start Host" />
-      <TableView fx:id="tblVistosRecientes" layoutX="106.0" layoutY="104.0" prefHeight="133.0" prefWidth="389.0">
+      <TableView fx:id="tblListasReproduccion" layoutX="106.0" layoutY="104.0" prefHeight="133.0" prefWidth="389.0">
         <columns>
           <TableColumn fx:id="ColuNombre" prefWidth="137.3333740234375" text="Nombre" />
           <TableColumn fx:id="columCategoria" minWidth="3.33331298828125" prefWidth="250.00002034505206" text="Ruta" />

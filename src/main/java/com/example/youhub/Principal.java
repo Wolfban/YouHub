@@ -1,21 +1,34 @@
 package com.example.youhub;
 
+import DAO.DAOLista;
+import Modelo.Videos;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
 
 /**
  * @author Esteban Barrera
  */
 
-public class Principal {
+public class Principal implements Initializable {
+
+    DAOLista daoLista = new DAOLista();
 
     @FXML
     private Button btnBuscarVid;
@@ -27,10 +40,11 @@ public class Principal {
     private Button btnCrearLista;
 
     @FXML
-    private TableView<?> tblListaReciente;
+    private TableView<?> tblListasReproduccion;
 
-    @FXML
-    private TableView<?> tblVistosRecientes;
+    ObservableList<Videos> listaPlays = FXCollections.observableArrayList();
+
+
 
     @FXML
     void CLick(ActionEvent event) throws IOException {
@@ -127,4 +141,8 @@ public class Principal {
     }
 
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
 }
