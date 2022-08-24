@@ -1,6 +1,7 @@
 package com.example.youhub;
 
 import DAO.DAOLista;
+import Modelo.ListaDeReproduccion;
 import Modelo.Videos;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
@@ -40,9 +42,15 @@ public class Principal implements Initializable {
     private Button btnCrearLista;
 
     @FXML
-    private TableView<?> tblListasReproduccion;
+    private TableView<ListaDeReproduccion> tblListasReproduccion;
 
-    ObservableList<Videos> listaPlays = FXCollections.observableArrayList();
+    @FXML
+    private TableColumn<ListaDeReproduccion, String> nombreListaCol;
+
+    @FXML
+    private TableColumn<ListaDeReproduccion, String> descripcionListaCol;
+
+    ObservableList<ListaDeReproduccion> listaPlays = FXCollections.observableArrayList();
 
 
 
@@ -143,6 +151,16 @@ public class Principal implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        try {
+            listaPlays.addAll(daoLista.listarListas());
 
+            nombreListaCol.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+            nombreListaCol.setCellValueFactory(new PropertyValueFactory<>("descripcion"));
+
+            tblListasReproduccion.setItems(listaPlays);
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

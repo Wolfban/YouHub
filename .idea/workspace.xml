@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Documentación agregada en BuscadorVideos.java y Reproductor.java&#10;&#10;Documentación automática agregada por el sistema en dataSources.xml y workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscarListas.java" beforeDir="false" />
+    <list default="true" id="d169df77-1d29-41f8-9fc0-0528c34cc482" name="Changes" comment="Se implementa el initializable a la clase Principal">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660017124318</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Se implementa el initializable a la clase Principal">
+      <created>1661341872172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661341872172</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +120,7 @@
     <MESSAGE value="Documentación extra en CrearVideo.java&#10;Edición autogenerada por el sistema en workspace.xml" />
     <MESSAGE value="Documentación extra en Conexion.java en el método openConnection()" />
     <MESSAGE value="Documentación agregada en BuscadorVideos.java y Reproductor.java&#10;&#10;Documentación automática agregada por el sistema en dataSources.xml y workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documentación agregada en BuscadorVideos.java y Reproductor.java&#10;&#10;Documentación automática agregada por el sistema en dataSources.xml y workspace.xml" />
+    <MESSAGE value="Se implementa el initializable a la clase Principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementa el initializable a la clase Principal" />
   </component>
 </project>
