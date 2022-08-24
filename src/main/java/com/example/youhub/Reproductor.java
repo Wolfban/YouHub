@@ -128,10 +128,7 @@ public class Reproductor implements Initializable {
     @FXML
     void Click(ActionEvent event)  {
 
-
     }
-
-
 
     private static String Lugar;
 
