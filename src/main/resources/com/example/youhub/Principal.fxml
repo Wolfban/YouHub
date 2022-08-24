@@ -19,7 +19,7 @@
             <Label layoutX="276.0" layoutY="53.0" prefHeight="57.0" prefWidth="58.0" text="Listas" />
             <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="473.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Logo.png" />
+                  /*<Image url="@Logo.png" />
                </image>
             </ImageView>
          </children>
@@ -35,8 +35,8 @@
       <Button fx:id="btnHost" layoutX="467.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" style="-fx-background-color: #26798E;" text="Start Host" />
       <TableView fx:id="tblListasReproduccion" layoutX="106.0" layoutY="104.0" prefHeight="133.0" prefWidth="389.0">
         <columns>
-          <TableColumn fx:id="ColuNombre" prefWidth="137.3333740234375" text="Nombre" />
-          <TableColumn fx:id="columCategoria" minWidth="3.33331298828125" prefWidth="250.00002034505206" text="Ruta" />
+          <TableColumn fx:id="nombreListaCol" prefWidth="137.3333740234375" text="Nombre" />
+          <TableColumn fx:id="descripcionListaCol" minWidth="3.33331298828125" prefWidth="250.00002034505206" text="Descripcion" />
         </columns>
       </TableView>
       <Label layoutX="251.0" layoutY="267.0" prefHeight="57.0" prefWidth="207.0" text="Me Gusta" />
