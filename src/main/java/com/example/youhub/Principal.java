@@ -149,6 +149,17 @@ public class Principal implements Initializable {
     }
 
 
+    /**
+     * Esta funcion se encarga de mostrar las listas de reproduccion ingresadas por el usuario.
+     * @author Ignacio Josué Zelada
+     * @param location
+     * The location used to resolve relative paths for the root object, or
+     * {@code null} if the location is not known.
+     *
+     * @param resources
+     * The resources used to localize the root object, or {@code null} if
+     * the root object was not localized.
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
