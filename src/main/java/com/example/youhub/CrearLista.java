@@ -4,10 +4,13 @@ package com.example.youhub;
  * @author Esteban Barrera
  */
 
+import DAO.DAOLista;
+import Modelo.ListaDeReproduccion;
 import Modelo.Videos;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -20,7 +23,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
-public class CrearLista {
+public class CrearLista implements Initializable {
+        DAOLista daoLista = new DAOLista();
 
     @FXML
     private Label Date;
@@ -37,20 +41,16 @@ public class CrearLista {
     @FXML
     private TextField txtNombre;
 
-    @FXML
-    void subirLista(ActionEvent event) {
 
-    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         apuntaFechas();
     }
     @FXML
-    void subirVideo(ActionEvent event) throws SQLException {
+    void subirLista(ActionEvent event) throws SQLException {
         String nombre = this.txtNombre.getText();
-        String categoria = this.txtCategoria.getText();
         String descripcion = this.txtDescripcion.getText();
-        String fechaSubido = this.Date.getText();
+
 
         String errorVacio = "";
 
@@ -58,28 +58,21 @@ public class CrearLista {
             errorVacio += "Por favor introduzca un nombre para el video\n";
         }
 
-        if(categoria == ""){
-            errorVacio += "Por favor introduzca una categoria\n";
-        }
-
         if(descripcion == ""){
             errorVacio += "Por favor introduzca una descripcion para el video\n";
         }
 
-        if(fechaSubido == ""){
-            errorVacio += "Por favor introduzca una fecha\n";
-        }
 
 
         if(errorVacio.isEmpty()){
-            Videos videoNuevo = new Videos(nombre, descripcion, fechaSubido);
+            ListaDeReproduccion ListaNueva = new ListaDeReproduccion(nombre, descripcion);
 
-            daoVideo.agregarVideo(videoNuevo);
+            daoLista.agregarLista(ListaNueva);
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setHeaderText(null);
             alert.setTitle("Listo");
-            alert.setContentText("Se ha registrado el Video");
+            alert.setContentText("Se ha registrado la playlist");
             alert.showAndWait();
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);

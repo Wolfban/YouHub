@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="Se crea la Lista de Reproduccion">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/BuscarListas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearLista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/CrearLista.fxml" afterDir="false" />
+    <list default="true" id="430a3263-de9a-4d61-b606-c5560b05b90f" name="Changes" comment="DAo completado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOLista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/CrearLista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/youhub/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/youhub/Principal.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,14 +135,7 @@
       <workItem from="1659570106128" duration="38846000" />
       <workItem from="1659785741302" duration="39695000" />
       <workItem from="1659993894250" duration="8772000" />
-      <workItem from="1661334289838" duration="1603000" />
-    </task>
-    <task id="LOCAL-00013" summary="Se inicia con el proceso de conexion a la base de datos y el del DAO">
-      <created>1659785859057</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1659785859057</updated>
+      <workItem from="1661334289838" duration="2233000" />
     </task>
     <task id="LOCAL-00014" summary="Se crean los procesos de conexion a la base de datos">
       <created>1659786248229</created>
@@ -480,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661332846789</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="DAo completado">
+      <created>1661336794936</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1661336794936</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creacion de la funcion buscarVideo para acceder a los archivos y subir un video" />
     <MESSAGE value="Creacion de la funcion apuntafechas para setear la fecha del video" />
     <MESSAGE value="Edicion del formulario para los videos" />
     <MESSAGE value="Se asigna la funcion para subir un video a su boton respectivo" />
@@ -556,7 +555,8 @@
     <MESSAGE value="Se enlaza el Principal con el buscar Videos y CrearVideo y se arregló un bug" />
     <MESSAGE value="se crea el DAO de las listas de reproduccion" />
     <MESSAGE value="Se crea la Lista de Reproduccion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crea la Lista de Reproduccion" />
+    <MESSAGE value="DAo completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAo completado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,7 +13,7 @@
       <AnchorPane layoutX="-1.0" layoutY="155.0" prefHeight="455.0" prefWidth="610.0" style="-fx-background-color: #FFE3B3;" />
       <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="163.0" prefWidth="610.0" style="-fx-background-color: #26798E;">
          <children>
-            <Label layoutX="196.0" layoutY="53.0" prefHeight="57.0" prefWidth="207.0" text="Reproducción más reciente" />
+            <Label layoutX="276.0" layoutY="53.0" prefHeight="57.0" prefWidth="58.0" text="Listas" />
             <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="473.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Logo.png" />
@@ -29,7 +29,7 @@
          </columns>
       </TableView>
       <Button fx:id="btnBuscarVid" layoutX="54.0" layoutY="508.0" mnemonicParsing="false" onAction="#click" style="-fx-background-color: #26798E;" text="Buscar Video" />
-      <Button fx:id="btnJoin" layoutX="286.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" style="-fx-background-color: #26798E;" text="Join Party" />
+      <Button fx:id="btnCrearLista" layoutX="286.0" layoutY="508.0" mnemonicParsing="false" onAction="#CLick" style="-fx-background-color: #26798E;" text="Crear Lista" />
       <Button fx:id="btnHost" layoutX="467.0" layoutY="508.0" mnemonicParsing="false" onAction="#Click" style="-fx-background-color: #26798E;" text="Start Host" />
       <TableView fx:id="tblVistosRecientes" layoutX="106.0" layoutY="104.0" prefHeight="133.0" prefWidth="389.0">
         <columns>

@@ -35,19 +35,19 @@ public class DAOLista {
          */
 
         Conexion conexion = Conexion.getInstance();
-        List<ListaDeReproduccion> lista = null;
+        List<ListaDeReproduccion> listas = null;
         String traerListas = "SELECT * FROM listareproduccion";
         try(Connection conexionBase = conexion.openConnection()){
             PreparedStatement st = conexionBase.prepareStatement(traerListas);
-            lista = new ArrayList();
+            listas = new ArrayList();
             ResultSet rs = st.executeQuery();
             while(rs.next()){
                 ListaDeReproduccion play = new ListaDeReproduccion();
                 play.setNombre(rs.getString("nombre"));
                 play.setDescripcion(rs.getString("descripcion"));
-                lista.add(play);
+                listas.add(play);
             }
-            return lista;
+            return listas;
         }
     }
 }

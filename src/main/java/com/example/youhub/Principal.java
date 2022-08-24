@@ -24,7 +24,7 @@ public class Principal {
     private Button btnHost;
 
     @FXML
-    private Button btnJoin;
+    private Button btnCrearLista;
 
     @FXML
     private TableView<?> tblListaReciente;
@@ -33,8 +33,35 @@ public class Principal {
     private TableView<?> tblVistosRecientes;
 
     @FXML
-    void CLick(ActionEvent event) {
+    void CLick(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CrearLista.fxml"));
 
+
+        Parent root = loader.load();
+
+
+        CrearLista controlador = loader.getController();
+
+
+        Scene scene1 = new Scene(root);
+        Stage stage = new Stage();
+
+
+        stage.setScene(scene1);
+        stage.show();
+
+
+        stage.setOnCloseRequest(e -> {
+            try {
+                controlador.closeWindows();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
+
+        Stage myStage = (Stage) this.btnCrearLista.getScene().getWindow();
+        myStage.close();
     }
     @FXML
     void Click(ActionEvent event) {
@@ -49,13 +76,13 @@ public class Principal {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("BuscadorVideos.fxml"));
 
 
-        Parent root = loader.load();
+        Parent root1 = loader.load();
 
 
         BuscadorVideos controlador = loader.getController();
 
 
-        Scene scene1 = new Scene(root);
+        Scene scene1 = new Scene(root1);
         Stage stage = new Stage();
 
 
